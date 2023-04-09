@@ -1,0 +1,2561 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<meta name="appRedirectPath" content="/paths/skills/angular" />
+<meta name="keywords" />
+<meta name="description" content="Angular is a complete JavaScript framework for creating dynamic and interactive applications in HTML. Aside from being one of the hottest frameworks on the web, Angular is easy to learn yet powerful enough to help you develop complex single-page web applications. This path includes content covering Angular 2 and beyond. For the original version, see our AngularJS path." />
+<meta property="og:description" content="Angular is a complete JavaScript framework for creating dynamic and interactive applications in HTML. Aside from being one of the hottest frameworks on the web, Angular is easy to learn yet powerful enough to help you develop complex single-page web applications. This path includes content covering Angular 2 and beyond. For the original version, see our AngularJS path." />
+<meta name="twitter:description" content="Angular is a complete JavaScript framework for creating dynamic and interactive applications in HTML. Aside from being one of the hottest frameworks on the web, Angular is easy to learn yet powerful enough to help you develop complex single-page web applications. This path includes content covering Angular 2 and beyond. For the original version, see our AngularJS path." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@pluralsight" />
+<meta id="view-oid" data-view-oid="7010a000001x1VCAAY" />
+<meta property="og:image" content="https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png" />
+<meta name="twitter:image" content="https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png" />
+<meta name="robots" content="index, follow" />
+<meta name="id" content="6fc1c513-2701-4736-80be-03d903f51dd7" />
+<meta name="categories" content="paths" />
+<meta name="cludo:category" content="paths" />
+<meta name="skill-levels" content="Beginner|Intermediate|Advanced" />
+<meta name="roles" content="software-development" />
+<meta name="highlight-combined-role" content="software-development" />
+<meta name="numberOfCourses" content="18" />
+<meta name="numberOfHours" content="66" />
+<meta name="thumbnail" content="https://pluralsight2.imgix.net/paths/images/angular-14a0f6532f.png" />
+<meta name="authors" content="Joe Eames|Deborah Kurata|Mark Zamoyta|John Papa|Brian Treese|Ajden Towfeek|Jon Friskics|Jim Cooper|Brian Noyes|Duncan Hunter|Brice Wilson|Dan Wahlin" />
+<meta name="type" content="skill" />
+<meta name="urlSlug" content="angular" />
+<meta name="url" content="/content/pluralsight/en/paths/angular.html" />
+<meta name="has-skill-iq" content="true" />
+<meta name="has-transcender-exam" content="false" />
+<meta name="standard-library" content="true" />
+<meta name="level-1-tags" />
+<meta name="level-2-tags" />
+<meta name="level-3-tags" />
+<link rel="canonical" href="https://www.pluralsight.com/paths/angular" />
+<script data-cfasync="false" data-prompt='auto' data-privacy-policy="https://www.pluralsight.com/privacy" src="https://cdn.transcend.io/cm/b8abd831-c4a2-4a4f-8fe7-475bb37be895/airgap.js"></script>
+<script data-cfasync="false">window.wcmmodedisabled = true;</script>
+<script data-cfasync="false">
+function getParameterByName(e,n){n||(n=window.location.href),e=e.replace(/[\[\]]/g,"\\$&");var o=new RegExp("[?&]"+e+"(=([^&#]*)|&|#|$)").exec(n);return o&&o[2]?decodeURIComponent(o[2].replace(/\+/g," ")):""}function changeHistoryQueryParam(e,n,o,t,a){if(history.pushState){var i=""==window.location.search?"?":window.location.search;if(-1!==decodeURIComponent(i).indexOf(e+"=")){var d=getParameterByName(e);if(t)if(o){var c=(p=d.split(",")).indexOf(n);if(c>-1&&p.splice(c,1),0===p.length){var r=new RegExp("&?"+e+"=[^&]*","g");i=i.replace(r,"")}else i=i.replace(e+"="+encodeURIComponent(d),e+"="+encodeURIComponent(p.join(",")))}else{var p=[];d?p=d.split(","):d="",-1===p.indexOf(n)&&(p.push(n),i=i.replace(e+"="+encodeURIComponent(d),e+"="+encodeURIComponent(p.join(","))))}else if(o){r=new RegExp("&?"+e+"=[^&]*","g");i=i.replace(r,"")}else i=i.replace(e+"="+encodeURIComponent(d),e+"="+encodeURIComponent(n))}else o||(i+="?"==i?e+"="+encodeURIComponent(n):"&"+e+"="+encodeURIComponent(n));var s=window.location.protocol+"//"+window.location.host+window.location.pathname+(a?decodeURIComponent(i):i);window.history.pushState({path:s},"",s)}}function dtmEventTrigger(e,n){var o=new CustomEvent(e,{bubbles:!0,cancelable:!1,detail:n});document.querySelector("body").dispatchEvent(o)}window.loadRemoteScript=function(e,n,o,t,a){var i=document.createElement("script");i.type=n||"text/javascript",i.id=t||null,1==o&&(i.async=o||1),i.readyState?i.onreadystatechange=function(){"loaded"!=i.readyState&&"complete"!=i.readyState||(i.onreadystatechange=null,a())}:i.onload=function(){a()},i.src=("https:"==document.location.protocol?"https://":"http://")+e,document.getElementsByTagName("head")[0].appendChild(i)};var doNotTrack=document.cookie.indexOf("ps_optout=1")>-1||document.URL.indexOf("dnt=true")>-1,oneHour=36e5,oneYear=24*oneHour*365,trkDate=new Date(Date.now()+oneHour);document.cookie="ps_trk="+(doNotTrack?"0":"1")+"; expires="+trkDate.toUTCString()+"; path=/"+(document.URL.indexOf("pluralsight.com")>-1?"; domain=pluralsight.com":"");var firstVisit=-1==document.cookie.indexOf("fv=");document.cookie="fv="+(firstVisit?"1":"0")+"; expires="+new Date(Date.now()+oneYear).toUTCString()+"; path=/"+(document.URL.indexOf("pluralsight.com")>-1?"; domain=pluralsight.com":""),window.dnbData={},document.cookie.indexOf("ps_trk=1")>-1&&"undefined"!=typeof dnbvid&&dnbvid.getData("api7831","json","T",function(e){window.dnbData=e,window.promoCheck&&!window.promoCheckRan&&window.promoCheck()}),document.addEventListener("at-content-rendering-succeeded",function(){window.targetFinished=!0},!1),document.addEventListener("at-content-rendering-failed",function(){window.targetFinished=!0},!1),document.addEventListener("at-content-rendering-no-offers",function(){window.targetFinished=!0},!1);
+</script>
+<meta name="featureFlags" content="consentautoprompt|munchkin|b2c_cart" />
+<script data-cfasync="false" src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/js/separates/jquery.min.js"></script>
+<link rel="stylesheet" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-uber.lc-39b4d41d62e8ca234a49b4e04cb9a9e1-lc.min.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-reskin.lc-4b2223d4a13c92b1a8a090f200ca7742-lc.min.css" type="text/css">
+<script data-cfasync="false">
+var appHost=("www-stage.pluralsight.com"==window.location.host||"www-dev.pluralsight.com"==window.location.host)?"https://app-stage.pluralsight.com":"https://app.pluralsight.com",pagePath=window.location.pathname,redirectPath="",appRedirectTag=document.head.querySelector("[name~='appRedirectPath'][content]");if(appRedirectTag&&(redirectPath=appRedirectTag.content.toString()),!window.is404){if(0==pagePath.indexOf("/product/channels")&&(redirectPath="/channels",document.URL.indexOf("cid=")>-1&&(redirectPath="/channels/details/"+getParameterByName("cid"))),pagePath.indexOf("/achievements")>-1&&"URLSearchParams"in window){var urlParams=new URLSearchParams(window.location.search),badgeID=urlParams.get("badge");redirectPath="/achievements/badges/"+badgeID}if(document.cookie.indexOf("www-status-production=")>-1&&-1==document.cookie.indexOf("midCheckout")&&("www.pluralsight.com"==window.location.host||"beta.www.pluralsight.com"==window.location.host)||document.cookie.indexOf("www-status-staging=")>-1&&-1==document.cookie.indexOf("midCheckout")&&("www-stage.pluralsight.com"==window.location.host||"beta.www-stage.pluralsight.com"==window.location.host)){var aidParam=getParameterByName("aid"),vidParam=getParameterByName("vid"),paramsString="";""!==aidParam&&(paramsString+=(paramsString.indexOf("?")>-1?"&":"?")+"aid="+aidParam),""!==vidParam&&(paramsString+=(paramsString.indexOf("?")>-1?"&":"?")+"vid="+vidParam),""!==redirectPath&&-1===document.URL.indexOf("show=home")?window.location=appHost+redirectPath+paramsString:jQuery(document).ready(function(){var a=appHost+"/id/dashboard",t=jQuery(".header_sign_up_link");t.text("My Dashboard"),t.attr("href",a),t.attr("title","My Dashboard"),jQuery(".header_sign_in_link").attr("style","display: none !important")})}else 0!=pagePath.indexOf("/customer/")||"www-stage.pluralsight.com"!=window.location.host&&"beta.www-stage.pluralsight.com"!=window.location.host&&"www.pluralsight.com"!=window.location.host&&"beta.www.pluralsight.com"!=window.location.host||-1!=document.cookie.indexOf("midCheckout")?""!=redirectPath?jQuery(document).ready(function(){jQuery(".sign_in_link").attr("href",appHost+"/id?redirectTo="+encodeURIComponent(redirectPath))}):jQuery(document).ready(function(){jQuery(".sign_in_link").attr("href",appHost+"/id?")}):window.location=appHost+"/id?redirectTo="+encodeURIComponent(document.URL)}
+</script>
+<meta data-customer-type="no-type" />
+<meta data-customer-type-ignore="false" />
+<script data-cfasync="false">
+    document.cookie.indexOf("ps_si=")>-1&&(window.selectedInterest=document.cookie.split("ps_si=")[1].split(";")[0]),document.cookie.indexOf("ps_sct=")>-1&&(window.selectedConsumerType=document.cookie.split("ps_sct=")[1].split(";")[0]);var customerType,customerTypeTag=document.head.querySelector("meta[data-customer-type]").getAttribute("data-customer-type"),customerTypeIgnore=document.head.querySelector("meta[data-customer-type-ignore]").getAttribute("data-customer-type-ignore");customerTypeTag&&"true"!==customerTypeIgnore&&"string"==typeof customerTypeTag&&("pluralsight-customer-type:individual"===customerTypeTag?customerType="individual":"pluralsight-customer-type:business"===customerTypeTag&&(customerType="business"),customerType&&"pluralsight-customer-type:escape"!==customerTypeTag&&setSelectedConsumerType(customerType));function setSelectedInterest(e){var t=new Date;t.setTime(t.getTime()+6048e5),document.cookie="ps_si="+e+"; expires="+t.toUTCString()+"; path=/",window.selectedInterest=e}function setSelectedConsumerType(e){var t=new Date;t.setTime(t.getTime()+6048e5),document.cookie="ps_sct="+e+"; expires="+t.toUTCString()+"; path=/",window.selectedConsumerType=e}function setSelectedBusinessType(e){var t=new Date;t.setTime(t.getTime()+6048e5),document.cookie="ps_sbt="+e+"; expires="+t.toUTCString()+"; path=/",window.selectedBusinessType=e}if(document.URL.indexOf("b2c-price=true")>-1?setSelectedConsumerType("individual"):document.URL.indexOf("b2b-price=true")>-1&&setSelectedConsumerType("business"),document.cookie.indexOf("ps_sbt=")>-1&&(window.selectedBusinessType=document.cookie.split("ps_sbt=")[1].split(";")[0]),-1==document.cookie.indexOf("drift_ab")){var driftAbDate=new Date;driftAbDate.setTime(driftAbDate.getTime()+6048e5);var driftAb=0==Math.floor(2*Math.random())?"A":"B";document.cookie="drift_ab="+driftAb+"; expires="+driftAbDate.toUTCString()+"; path=/"}var inflDate=new Date;inflDate.setTime(inflDate.getTime()+18e5);var visNumDate=new Date;if(visNumDate.setTime(visNumDate.getTime()+31536e6),document.cookie.indexOf("ps_infl")>-1){var infl=document.cookie.split("ps_infl=")[1].split(";")[0];document.cookie="ps_infl="+infl+"; expires="+inflDate.toUTCString()+"; path=/"}else{var visNum=1;document.cookie.indexOf("ps_visNum")>-1&&(visNum=parseInt(document.cookie.split("ps_visNum=")[1].split(";")[0])+1),document.cookie="ps_visNum="+visNum+"; expires="+visNumDate.toUTCString()+"; path=/",getParameterByName("aid")||getParameterByName("vid")||""!=document.referrer&&-1==document.referrer.indexOf("pluralsight.com")?document.cookie="ps_infl=1; expires="+inflDate.toUTCString()+"; path=/":document.cookie="ps_infl=0; expires="+inflDate.toUTCString()+"; path=/"}!function(e,t,i,o){function n(){return t.getElementsByTagName("head")[0]}function s(e,i){if(e){var o=t.getElementById(i);o&&e.removeChild(o)}}if(window.location.hostname.endsWith("pluralsight.com")&&("/content/pluralsight/en.html"===window.location.pathname||"/"===window.location.pathname)){!function(e,i,o){if(e){var n=t.createElement("style");n.id=i,n.innerHTML=o,e.appendChild(n)}}(n(),"at-body-style","body {opacity: 0 !important}");const e=setTimeout(function(){s(n(),"at-body-style")},3e3);jQuery("html").on("at-content-rendering-succeeded at-content-rendering-failed",()=>{s(n(),"at-body-style"),clearTimeout(e)})}}(window,document);
+</script>
+<script src="//assets.adobedtm.com/launch-EN123ab280156b405ca2abf6acf664d9a0.min.js" async></script>
+<link rel="apple-touch-icon" sizes="57x57" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/manifest.json">
+<link rel="mask-icon" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/safari-pinned-tab.svg" color="#e71585">
+<link rel="shortcut icon" href="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#e71585">
+<meta name="msapplication-TileImage" content="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<title>Angular | Pluralsight</title>
+<meta property="og:title" content="Angular" />
+<meta name="twitter:title" content="Angular" />
+<meta name="cludo:content-path" content="/content/pluralsight/en/paths/angular" />
+</head>
+<body class="mode-disabled path-template font-loading">
+<div class="site-wrap">
+<div class="nav-context ">
+<div class="xf-page xfpage page basicpage">
+<div class="xf-content-height">
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+<div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div id="experiencefragment-42472f22d4" class="cmp-experiencefragment cmp-experiencefragment--unified-shared-components">
+<div class="xf-content-height">
+<div class="root responsivegrid">
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+<div class="free-form-component aem-GridColumn aem-GridColumn--default--12">
+<style>
+      .navigation .ps-navigation .ps-navigation-universal ul.ps-item>li.ps-nav-search.menu-link.open button:after {
+     background: unset;
+}
+.menu-dropdown .ps-nav-dropdown {
+   padding: 20px 0;
+}
+.menu-dropdown .ps-nav-dropdown ul li {
+   padding: 0;
+   margin: 0;
+}
+.menu-dropdown .ps-nav-dropdown ul li.nav-column-header .nav-title {
+   font-family: "PS Commons Bold";
+   margin-bottom: 3px;
+}
+.menu-dropdown .ps-nav-dropdown ul li.nav-column-item a {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 22px;
+   color: #000000;
+   padding: 10px 12px;
+   text-decoration: none;
+   background: linear-gradient( to left, transparent, transparent 50.03%, #f6f6f6 50%, #f6f6f6);
+   background-position: 100% 0;
+   background-size: 200% 100%;
+   transition: all 0.15s ease-in;
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+.menu-dropdown .ps-nav-dropdown ul li.nav-column-item a:hover {
+   background-position: 0 0;
+   color: #D60056;
+}
+.menu-dropdown .ps-nav-dropdown ul li.nav-column-item span.nav-title-icon {
+   display: inline-block;
+   background: #EFEFEF;
+   border-radius: 3px;
+   box-shadow: inset 0px 0px 0px 2px rgba(236, 0, 140, 0);
+   transition: all 0.25s ease-in;
+   margin-right: 10px;
+}
+.menu-dropdown .ps-nav-dropdown ul li.nav-column-item span.nav-title-icon > img {
+   width: 28px;
+}
+.menu-dropdown .ps-nav-dropdown ul li.nav-column-item a:hover span.nav-title-icon {
+   box-shadow: inset 0px 0px 0px 2px rgba(236, 0, 140, 1);
+}
+.menu-dropdown .ps-nav-dropdown .nav-dropdown-link {
+   margin-top: auto;
+   padding: 20px 0 0;
+}
+.menu-dropdown .ps-nav-dropdown .nav-dropdown-link a {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 20px;
+   color: #D60056;
+   position: relative;
+   text-decoration: none;
+   padding: 0;
+}
+.menu-dropdown .ps-nav-dropdown .nav-dropdown-link a:after {
+   margin-left: 4px;
+   font-family: FontAwesome;
+   content: "\f105";
+   color: #D60056;
+   transition: .3s all;
+}
+.menu-dropdown .ps-nav-dropdown .nav-dropdown-link a:hover:after {
+   margin-left: 8px;
+}
+.menu-dropdown .ps-nav-dropdown .nav-title-arrow {
+   background: url(/content/dam/ps-nav-assets/arrow-pink-new.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 18px;
+   height: 12px;
+   display: block;
+   position: absolute;
+   right: 20px;
+   top: 50%;
+   transition: .3s all;
+   opacity: 0;
+   transform: translateY(-50%);
+}
+.menu-dropdown .ps-nav-dropdown ul>li>a:hover .nav-title-arrow {
+   opacity: 1;
+   right: 10px;
+}
+@media (min-width: 1025px) {
+   .menu-dropdown .ps-nav-dropdown {
+      padding: 50px;
+   }
+}
+  </style>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navigation aem-GridColumn aem-GridColumn--default--12">
+<header class="ps-navigation aem-component ">
+<a id="skipContent" tabindex="0" href="#content" data-aa-title="PN-Skip To Content">Skip to content</a>
+<nav class="ps-navigation-mega" aria-label="Primary product menu">
+<div class="ps-navigation-container">
+<a class="ps-nav-brand" href="/" aria-label="Pluralsight" data-aa-title="UN-Pluralsight Main"><img src="/content/dam/ps-nav-assets/pluralsight-company-white-logo.png" alt="Pluralsight Logo" /></a>
+<ul>
+<li><a href="/" data-aa-title="UN-Pluralsight">Pluralsight</a></li>
+<li class="active"><a href="/product/skills" data-aa-title="UN-Skills">Skills</a></li>
+<li><a href="/product/flow" data-aa-title="UN-Flow">Flow</a></li>
+<li><a href="/blog" data-aa-title="UN-Blog">Blog</a></li>
+<li class="menu-link">
+<button role="button" type="button" class="menu-a" aria-label="Sign in" aria-expanded="false" data-aa-title="UN-Sign In">
+<img src="/content/dam/ps-nav-assets/nav-profile-image.svg" alt="Icon for profile image " />
+Sign in <span><i class="ps-nav-arrow"></i></span>
+</button>
+<div class="menu-dropdown-panel">
+<div class="menu-dropdown">
+<ul>
+<li>
+<a href="https://app.pluralsight.com/id" data-aa-title="UN-Skills Sign In">
+<p>Sign in to</p>
+<div class="alt-image-w-arrow"><img src="/content/dam/ps-nav-assets/product-logo/pluralsight-skills-black-logo.png" alt="Sign in to Pluralsight Skills" width="135" /><span><i class="ps-nav-arrow"></i></span></div>
+</a>
+</li>
+<li>
+<a href="https://app.pluralsight.com/id?redirectTo=https%3a%2f%2fflow.pluralsight.com%2f" data-aa-title="UN-Flow Sign In">
+<p>Sign in to</p>
+<div class="alt-image-w-arrow"><img src="/content/dam/ps-nav-assets/product-logo/pluralsight-flow-black-logo.png" alt="Sign in to Pluralsight Flow" width="117" /><span><i class="ps-nav-arrow"></i></span></div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+<nav class="ps-navigation-universal " aria-label="Secondary product menu">
+<div class="ps-navigation-container">
+<div class="ps-nav-brand ">
+<a href="/product/skills" aria-label="Pluralsight" data-aa-title="PN-skills">
+<img src="/content/dam/pluralsight-creative-team/creative_portfolio/brand_strategic_refresh2022program/brand_strategic_refreshcreativeexploration2022project/final/products/skills/Pluralsight-Product-Logo-Skills-Color-OnDark.webp" alt="Logo for Pluralsight Skills" />
+</a>
+</div>
+<div class="ps-nav-mobile hide-for-large-up">
+<button role="button" type="button" aria-label="Mobile hamburger menu" data-aa-title="PN-Mobile Hamburger">
+<i class="hamburger-line"></i>
+<i class="hamburger-line"></i>
+<i class="hamburger-line"></i>
+</button>
+</div>
+<div class="ps-nav-menu">
+<nav class="ps-navigation-mega mobile-only" aria-label="Primary mobile menu">
+<div class="ps-navigation-container">
+<a class="ps-nav-brand" href="/" aria-label="Pluralsight" data-aa-title="UN-Pluralsight Main Mobile"><img src="/content/dam/ps-nav-assets/pluralsight-company-black-logo.png" alt="Pluralsight Logo" /></a>
+<ul>
+<li class="menu-link">
+<a href="#" class="menu-a" aria-label="Sign in" aria-expanded="false" data-accordion="mobileSignIn" data-aa-title="UN-Sign In Mobile">
+Sign in <span><i class="ps-nav-arrow"></i></span>
+</a>
+</li>
+<li class="menu-link">
+<a href="#" class="menu-a" aria-label="Mobile Menu" aria-expanded="false" data-accordion="mobileMenu" data-aa-title="UN-Menu Mobile">
+Menu <span><i class="ps-nav-arrow"></i></span>
+</a>
+</li>
+</ul>
+<div id="mobileSignIn" class="menu-dropdown-panel">
+<div class="menu-dropdown">
+<ul>
+<li>
+<a href="https://app.pluralsight.com/id" data-aa-title="UN-Skills Sign In Mobile">
+<span class="ps-nav-brand"><img src="/content/dam/ps-nav-assets/product-logo/pluralsight-skills-black-logo.png" alt="Sign in to Pluralsight Skills" /></span>
+<p>Sign in to Skills <span><i class="ps-nav-arrow"></i></span></p>
+</a>
+</li>
+<li>
+<a href="https://app.pluralsight.com/id?redirectTo=https%3a%2f%2fflow.pluralsight.com%2f" data-aa-title="UN-Flow Sign In Mobile">
+<span class="ps-nav-brand"><img src="/content/dam/ps-nav-assets/product-logo/pluralsight-flow-black-logo.png" alt="Sign in to Pluralsight Flow" /></span>
+<p>Sign in to Flow <span><i class="ps-nav-arrow"></i></span></p>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="mobileMenu" class="menu-dropdown-panel">
+<div class="menu-dropdown">
+<ul>
+<li><a href="/" data-aa-title="UN-Pluralsight Mobile">Pluralsight <span><i class="ps-nav-arrow"></i></span></a></li>
+<li class="active"><a href="/product/skills" data-aa-title="UN-Skills Mobile">Skills <span><i class="ps-nav-arrow"></i></span></a></li>
+<li><a href="/product/flow" data-aa-title="UN-Flow Mobile">Flow <span><i class="ps-nav-arrow"></i></span></a></li>
+<li><a href="/blog" data-aa-title="UN-Blog Mobile">Blog <span><i class="ps-nav-arrow"></i></span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+<ul class="ps-item ps-item-main">
+<li class="menu-link">
+<a href="/product/skills" data-aa-title="PN-Skills-Why Skills" class="  ">
+Why Skills?
+</a>
+</li>
+<li class="menu-link">
+<button type="button" role="button" class="menu-a" id="menuPNSkillsCourses" data-aa-title="PN-Skills-Courses" aria-controls="menuControlPNSkillsCourses" aria-expanded="false">
+Courses <span><i class="ps-nav-arrow"></i></span>
+</button>
+<div class="menu-dropdown-panel" id="menuControlPNSkillsCourses" role="region" aria-labelledby="menuPNSkillsCourses">
+<div class="menu-dropdown"><div class="free-form-component section">
+<style>
+      .ps-nav-resources.ps-nav-dropdown {
+padding: 0;
+    margin: 0;
+}
+.ps-nav-resources .nav-column-left ul,
+.ps-nav-resources .nav-column-right ul {
+padding: 0;
+margin: 0;
+}
+.ps-nav-resources .nav-column-right {
+background: #f6f6f6;
+border-bottom-right-radius: 16px;
+margin-left: -20px;
+margin-right: -20px;
+}
+.ps-nav-resources .nav-column-right ul {
+padding: 20px;
+}
+.ps-nav-resource ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.ps-nav-resources ul li {
+padding: 0 0 5px;
+margin:0;
+font-weight: 700 !important;
+font-size: 16px;
+line-height: 22px;
+color: #000000;
+}
+.ps-nav-resources ul li:before { display: none; }
+.ps-nav-resources ul li.nav-column-header {
+    border-bottom: 1px solid #cfcfcf;
+   margin: 20px 0;
+    padding: 0;
+}
+.ps-nav-resources .nav-column-paths li a {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.ps-nav-resources .nav-column-paths li a:hover {
+     box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.1);
+}
+.ps-nav-resources .nav-column-paths li img {
+    width: 50px;
+}
+
+
+@media (min-width: 1025px) {
+.ps-nav-resources.ps-nav-dropdown {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav-column-left nav-column-left nav-column-right";
+}
+.ps-nav-resources .nav-column-left {
+padding: 50px;
+    grid-area: nav-column-left;
+    display: grid;
+grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.ps-nav-resources .nav-column-right {
+    grid-area: nav-column-right;
+padding: 50px;
+margin: 0;
+}
+.ps-nav-resources .nav-column-right ul {
+padding: 0;
+}
+.ps-nav-resources ul li.nav-column-header {
+margin: 0 0 10px;
+}
+}
+  </style>
+<section class="ps-nav-resources ps-nav-dropdown">
+<div class="nav-column-left">
+<ul>
+<li class="nav-column-header">
+<div class="nav-title" role="heading">
+Ways to upskill
+</div>
+</li>
+<li class="nav-column-item">
+<a href="/browse" data-aa-title="SN-Skills-Courses"><span class="nav-title-icon"><img alt="Icon for Courses" src="/content/dam/ps-nav-assets/resources/navy-icons/courses-guides-icon.png"></span> Courses <span class="nav-title-arrow"></span></a>
+</li>
+<li class="nav-column-item">
+ <a href="/product/skill-iq" data-aa-title="SN-Skills-Skill assessments"><span class="nav-title-icon"><img alt="Icon for Skills assessments" src="/content/dam/ps-nav-assets/resources/navy-icons/assessment-icon.png"></span> Skill assessments <span class="nav-title-arrow"></span></a>
+</li>
+<li class="nav-column-item">
+<a href="/product/labs" data-aa-title="SN-Skills-Labs"><span class="nav-title-icon"><img alt="Icon for Labs" src="/content/dam/ps-nav-assets/resources/navy-icons/labs-icon.png"></span> Labs <span class="nav-title-arrow"></span></a>
+</li>
+<li class="nav-column-item">
+<a href="/product/hands-on-learning" data-aa-title="SN-Skills-Hands-on learning"><span class="nav-title-icon"><img alt="Icon for Hands-on learning" src="/content/dam/ps-nav-assets/resources/navy-icons/hands-on-icon.png"></span> Hands-on learning <span class="nav-title-arrow"></span></a>
+</li>
+<li class="nav-column-item">
+<a href="/product/cert-prep" data-aa-title="SN-Skills-Certification prep"><span class="nav-title-icon"><img alt="Icon for Certification prep" src="/content/dam/ps-nav-assets/resources/navy-icons/certification-icon.png"></span> Certification prep <span class="nav-title-arrow"></span></a>
+</li>
+<li class="nav-dropdown-link">
+<a href="/browse" data-aa-title="SN-Skills-See our entire course library">See our entire course library</a>
+</li>
+</ul>
+<ul>
+<li class="nav-column-header">
+<div class="nav-title" role="heading">
+Skills for
+</div>
+</li>
+<li class="nav-column-item">
+<a href="/browse/software-development" data-aa-title="SN-Skills-Software development "><span class="nav-title-icon"><img alt="Icon for Software development" src="/content/dam/ps-nav-assets/resources/navy-icons/software-dev-icon.png"></span> Software development <span class="nav-title-arrow"></span></a>
+</li>
+<li class="nav-column-item">
+<a href="/browse/it-ops" data-aa-title="SN-Skills-IT Ops"><span class="nav-title-icon"><img alt="Icon for IT ops" src="/content/dam/ps-nav-assets/resources/navy-icons/it-ops-icon.png"></span> IT Ops <span class="nav-title-arrow"></span></a>
+</li>
+<li class="nav-column-item">
+<a href="/browse/information-cyber-security" data-aa-title="SN-Skills-Info and cybersecurity"><span class="nav-title-icon"><img alt="Icon for Info &amp; cyber security" src="/content/dam/ps-nav-assets/resources/navy-icons/security-icon.png"></span> Info &amp; cybersecurity <span class="nav-title-arrow"></span></a>
+</li>
+<li class="nav-column-item">
+<a href="/browse/cloud-computing" data-aa-title="SN-Skills-Cloud computing"><span class="nav-title-icon"><img alt="Icon for Cloud computing" src="/content/dam/ps-nav-assets/resources/navy-icons/cloud-icon.png"></span> Cloud computing <span class="nav-title-arrow"></span></a>
+</li>
+<li class="nav-column-item">
+<a href="/browse/machine-learning" data-aa-title="SN-Skills-Machine learning"><span class="nav-title-icon"><img alt="Icon for Machine learning" src="/content/dam/ps-nav-assets/resources/navy-icons/machine-learning-icon.png"></span> Machine learning <span class="nav-title-arrow"></span></a>
+</li>
+<li class="nav-column-item">
+<a href="/browse/data-professional" data-aa-title="sn-skills-data-professional"><span class="nav-title-icon"><img alt="Icon for Data professional" src="/content/dam/ps-nav-assets/resources/navy-icons/data-icon.png"></span> Data professional <span class="nav-title-arrow"></span></a>
+</li>
+<li class="nav-dropdown-link">
+<a href="/product/skills/individuals" data-aa-title="SN-Skills-For individuals">For individuals</a>
+</li>
+</ul>
+</div>
+<div class="nav-column-right">
+<ul class="nav-column-paths">
+<li class="nav-column-header">
+<div class="nav-title">
+Top trending paths
+</div>
+</li>
+<li>
+<a href="https://www.pluralsight.com/paths/microsoft-azure-deployment" data-aa-title="SN-Microsoft Azure"><img alt="Microsoft Azure Deployment" src="https://pluralsight2.imgix.net/paths/images/group-policy-administration-ee0dacafe8.png?w=300">
+<div>
+Microsoft Azure
+</div></a>
+</li>
+<li>
+<a href="https://www.pluralsight.com/paths/cleaning-data-with-r" data-aa-title="SN-Cleaning data with R"><img alt="Cleaning Data with R" src="https://pluralsight2.imgix.net/paths/images/r-programming-eb2e267a97.png?w=300">
+<div>
+Cleaning data with R
+</div></a>
+</li>
+<li>
+<a href="https://www.pluralsight.com/paths/ruby-language-fundamentals" data-aa-title="SN-Ruby Language Fundamentals"><img alt="Ruby Language Fundamentals" src="https://pluralsight2.imgix.net/paths/images/ruby-7e88ddd5f0.png?w=300">
+<div>
+Ruby Language Fundamentals
+</div></a>
+</li>
+<li>
+<a href="https://www.pluralsight.com/paths/aws-operations" data-aa-title="SN-AWS Operations"><img alt="AWS Operations" src="https://pluralsight2.imgix.net/paths/images/aws-certified-devops-engineer-25d912e3da.png?w=300">
+<div>
+AWS Operations
+</div></a>
+</li>
+<li>
+<a href="https://www.pluralsight.com/paths/core-python" data-aa-title="SN-Core Python"><img alt="Core Python" src="https://pluralsight2.imgix.net/paths/images/python-7be70baaac.png?w=300">
+<div>
+Core Python
+</div></a>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+</div>
+</li>
+<li class="menu-link">
+<a href="/pricing/skills" data-aa-title="PN-Skills-View plan" class="  ">
+View plans
+</a>
+</li>
+<li class="menu-link">
+<a href="/product/skills/individuals" data-aa-title="PN-Skills-For individuals" class="  ">
+For individuals
+</a>
+</li>
+<li class="menu-link ps-nav-search">
+<button role="button" type="button" class="menu-a" data-aa-title="PN-Skills Search" aria-expanded="false">
+<svg viewBox="0 0 797 801" width="20" height="20" x="0px" y="0px">
+<path fill="white" stroke="white" stroke-width="40" class="st0" d="M763.6,743.8L508.9,490c22.5-24.3,40-51.9,52.5-82.6s19-64.1,19.6-100c-2.4-77.3-29.2-141.2-80.3-191.7
+              S386.3,39,310.8,37.2c-79.7,1.8-145,28-195.8,78.5S37.9,230.1,36,307.4c2.4,77.3,29.2,141.2,80.3,191.7s114.4,76.7,189.9,78.5
+              c34.1-0.6,65.7-6.4,94.9-17.3c29.2-11,56-26.5,80.3-46.6l253.8,254.7L763.6,743.8z M306.3,537.5c-65.1-1.8-119.3-24.3-162.5-67.6
+              S78,372.6,76.2,307.4c1.8-65.1,24.3-119.4,67.6-163s97.4-66.2,162.5-68c65.1,1.8,119.4,24.5,163,68s66.2,97.8,68,163
+              c-1.8,65.1-24.5,119.3-68,162.5S371.4,535.7,306.3,537.5z" />
+</svg>
+</button>
+<div class="menu-dropdown-panel">
+<div class="menu-dropdown"><div class="nav-search section">
+<div id="header_tabs--search" class="nav-search-container nav-dropdown-container header_tabs_content--container">
+<div class="header_tabs_content--container">
+<div class="header_nav--menu header_nav_search">
+<div class="header_search search-button__component">
+<form id="header_searchForm" class="header_search--form">
+<div class="closebutton"></div>
+<input type="text" name="q" class="header_search--input" placeholder="What do you want to learn?" autocomplete="off" />
+<svg viewBox="0 0 797 801" width="20" height="20" x="0px" y="0px">
+<path fill="white" stroke="white" stroke-width="40" class="st0" d="M763.6,743.8L508.9,490c22.5-24.3,40-51.9,52.5-82.6s19-64.1,19.6-100c-2.4-77.3-29.2-141.2-80.3-191.7
+              S386.3,39,310.8,37.2c-79.7,1.8-145,28-195.8,78.5S37.9,230.1,36,307.4c2.4,77.3,29.2,141.2,80.3,191.7s114.4,76.7,189.9,78.5
+              c34.1-0.6,65.7-6.4,94.9-17.3c29.2-11,56-26.5,80.3-46.6l253.8,254.7L763.6,743.8z M306.3,537.5c-65.1-1.8-119.3-24.3-162.5-67.6
+              S78,372.6,76.2,307.4c1.8-65.1,24.3-119.4,67.6-163s97.4-66.2,162.5-68c65.1,1.8,119.4,24.5,163,68s66.2,97.8,68,163
+              c-1.8,65.1-24.5,119.3-68,162.5S371.4,535.7,306.3,537.5z" />
+</svg>
+</form>
+<a href="/search" class="hidden header_search--url"></a>
+</div>
+</div>
+<div id="header-search-results-all" class="header_tabs_content--container nav-search-item">
+<div id="search-menu__results-dropdown" class="nav-search-result">
+<div id="header_dropdown--resultList"></div>
+<div id="header_dropdown--resultListCourses"></div>
+</div>
+<div class="nav-search-result paths">
+<div id="header_dropdown--resultListPaths"></div>
+</div>
+</div>
+</div>
+</div>
+<script id="header-search-categories-templates-partial" type="text/x-handlebars-template">
+    {{#compare this.name '===' 'courses'}}
+    <ul class="header_dropdown--lists">
+        <li class="first li-list">{{{this.name}}}</li>
+        {{#each this.results}}
+            <li><a href="{{formatCourseURL this.courseName 'course'}}">{{{this.title}}}</a></li>
+        {{/each}}
+        <li class="last li-list"><a class="view-all-link" data-tab-param="{{mapResultSetNameToTabName this.name}}" data-categories="{{this.name}}">See more results</a></li>
+    </ul>
+    {{/compare}}
+</script>
+</div></div>
+</div>
+</li>
+</ul>
+<ul class="ps-item ps-item-utility">
+<li class="menu-button">
+<a href="#contact-sales" data-aa-title="PN-Skills-Contact sales" class="fancybox button--secondary--white button">
+Contact Sales
+</a>
+</li>
+<li class="menu-button">
+<a href="/pricing/free-trial" data-aa-title="PN-Skills-Try for free" class=" button--gradient button">
+Try for free
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div class="header-padding"></div>
+<div class="generic-modal section">
+<div id="contact-sales" class="main modal-wrapper clearfix ">
+<div class="clearfix"><div class="generic-block section">
+<div id="contact-sales_" class="hidden"></div>
+<div class="generic-block-wrapper lazy-bg    block block--custom-color block--left   padding-top-zero padding-bottom-zero contact-sales     clearfix" style="background: #1B1834;border-radius:16px;">
+<div class="main clearfix">
+<div class="content clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12"><div class="title2 section">
+<div data-emptytext="Title">
+<h1 id="contact_sales_h1" class="  mobile-font-size-6 tablet-font-size-5 desk-font-size-4 title--left   title--ultra ">
+Contact Sales
+</h1>
+</div></div>
+<div class="marketo-form section">
+<div class="marketo-form-component marketo-form--inline marketo-form--left   clearfix">
+<div class="marketo-form-data hidden">
+<span class="form-id">1020</span>
+<a class="redirect-path">Redirect Link</a>
+<span class="download-path"></span>
+<span class="success-message"><div class="contact-sales__title">Thank you!</div>
+<div class="contact-sales__subtitle"> Our team will be in touch shortly. </div></span>
+<span class="marketo-wid"></span>
+<span class="marketo-biz-email"></span>
+</div>
+<form name="mkto_form" id="marketoForm_1020" class="marketo-target"><div class="loading-message"><p class="loading-message-top">Loading form...</p><p class="loading-message-bottom">If this message remains, it may be due to cookies being disabled or to an ad blocker.</p></div></form>
+<iframe id="marketo-file" style="display:none;"></iframe>
+</div>
+<script type="text/javascript" src="//cdn-0.d41.co/tags/ff-2.min.js" charset="utf-8"></script>
+</div>
+<div class="free-form-component section">
+<style>
+      .mode-edit .ps-navigation .generic-modal > .main#contact-sales {display: none;}
+.contact-sales .mktoForm .mktoButtonWrap.mktoSimple button.mktoButton { background: linear-gradient(145deg, #f05a28 0, #e80a89 100%) !important; }
+.contact-sales button:hover { background-color: #CC1671; }
+.contact-sales {padding: 40px !important; position: relative; box-sizing: border-box; }
+.contact-sales .marketo-form--inline .mktoForm {margin: 0 auto; font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;}
+.contact-sales .mktoForm label.mktoLabel {font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif; color: #ffffff !important;}
+.contact-sales .mktoField { font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif !important; background: #2A2753 !important; border: none !important; color: #fff !important; box-shadow: none !important;border-radius:8px;}
+.contact-sales .mktoHtmlText { font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif ; color: #ffffff !important;}
+.contact-sales .mktoHtmlText a { color: #E82A89; }
+.contact-sales .ps_pilot_close_btn { position:absolute; top: -30px; right: -30px; width: 25px; z-index: 9999; cursor: pointer; }
+.contact-sales .marketo-form-component {margin: 0 -30px;}
+.contact-sales .mktoForm .mktoButtonWrap.mktoSimple button.mktoButton {
+    border: none !important;
+    border-radius: 999px !important;
+    background: #e7005e !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-transform: unset;
+    transition: all .6s ease-in-out !important;
+}
+.contact-sales .mktoForm .mktoButtonWrap.mktoSimple button.mktoButton:hover {
+    background: #ff1675 !important;
+}
+.contact-sales .mktoForm .mktoButtonWrap.mktoSimple button.mktoButton:focus {
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
+}
+.contact-sales .mktoForm .mktoRadioList > label, .contact-sales .mktoForm .mktoCheckboxList > label {
+    color: #ffffff !important;
+}
+.marketo-form__success-message.form-2183 {padding: 60px 0;}
+.contact-sales__title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Gotham A", "Gotham B", sans-serif;
+    color: white;
+}
+.contact-sales .title--white { font-size: 21px; font-weight: 500; color: #ccc; margin-bottom: 25px; }
+.contact-sales__subtitle {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+.fancybox-skin:has(.contact-sales) {
+   background: unset;
+}
+.fancybox-opened .fancybox-skin {
+    border-radius: 20px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .marketo-form__success-message.form-2183 {
+         padding: 100px 30px;
+     }
+    .contact-sales__title {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    .contact-sales__subtitle {font-size: 28px;}
+}
+@media only screen and (max-width: 1024px) {
+   #contact-sales {width: 100% !important;}
+   .contact-sales {max-height: 560px; overflow-y: auto; padding: 40px 20px !important;}
+   .contact-sales .marketo-form--inline .mktoForm .mktoFormRow {width: 100%; padding: 0;}
+   .contact-sales .marketo-form--inline .mktoButtonRow {margin: 0;}
+   .contact-sales .mktoForm .mktoFormCol {width: 100%;}
+   .contact-sales .mktoForm .mktoFieldWrap {width: 100%;}
+   .contact-sales .mktoForm input, .mktoForm select {width: 100% !important;}
+   .contact-sales .marketo-form--inline .mktoForm {max-width: unset; margin: 0;}
+   .contact-sales .marketo-form-component {margin: 0;}
+   .contact-sales .ps_pilot_close_btn {right: -10px;}
+}
+@media only screen and (max-width: 320px) {
+   .contact-sales .title2 h1 {margin-top: 40px;}
+   .contact-sales .ps_pilot_close_btn {right: -20px;top: 20px;}
+}
+  </style>
+<img src="/content/dam/pluralsight/images/target/new-home-marquee/close.png" class="ps_pilot_close_btn" alt="Close button" />
+<script type="text/javascript">
+    jQuery(document).on({
+  click:function(e){   
+	e.preventDefault(); 
+        jQuery('.fancybox-overlay').trigger("click");
+   }
+},'.ps_pilot_close_btn');
+
+document.getElementsByTagName('body')[0].addEventListener("ps.mktoFormSuccess", function(data){
+          var salesForm = data.detail.formID;
+          if(salesForm == '2183') {
+              document.getElementsByClassName('contact-sales')[0].style.backgroundColor='#E80A89'; 
+              document.getElementById('contact_sales_h1').style.display='none';
+          }
+});
+  </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input type="hidden" name="modal-override-width" class="modal-override-width" />
+</div></div>
+</div>
+<div class="free-form-component aem-GridColumn aem-GridColumn--default--12">
+<style>
+      .ps-nav-solutions ul li .nav-title, .nav-column-header .nav-title, .menu-dropdown .ps-nav-dropdown ul li.nav-column-item a, .ps-nav-resources ul li, .ps-nav-resources .nav-column-paths li a, .ps-nav-resources ul li .feature-desc, .navigation .ps-navigation .ps-navigation-mega .menu-dropdown-panel .menu-dropdown ul li p { color: #130F25; }
+
+.menu-dropdown .ps-nav-dropdown .nav-dropdown-link a, .ps-nav-solutions ul > li > a:hover .nav-title, .menu-dropdown .ps-nav-dropdown .nav-dropdown-link a:after { color: #D60056; }
+
+.menu-dropdown .ps-nav-dropdown ul li.nav-column-item a:hover {background: #F4F7FA;}
+
+.ps-nav-resources .nav-column-right { background-color: #F4F7FA; }
+
+.navigation .ps-navigation .ps-navigation-mega ul li a, .navigation .ps-navigation .ps-navigation-mega ul li button { color: #B6B9D8;}
+
+.navigation .ps-navigation .ps-navigation-universal ul.ps-item>li .ps-nav-arrow { color: #B6B9D8; }
+
+.navigation .ps-navigation .ps-navigation-mega .menu-dropdown-panel .menu-dropdown ul { background: #F4F7FA !important; }
+
+.ps-nav-solutions ul li > a p, .ps-nav-products ul li.nav-column-header p {color: #4E6583;}
+
+.ps-nav-products ul li.nav-column-header, .ps-nav-products ul:not(:last-child):after, .ps-nav-resources ul li.nav-column-header { border-bottom: 1px solid rgba(137, 164, 199, 0.5);}
+
+.menu-dropdown .ps-nav-dropdown ul li.nav-column-item span.nav-title-icon {background: #EBEFF5;}
+
+
+  </style>
+</div>
+</div>
+</div></div>
+<div class="xf-page-promo xfpage page basicpage">
+<div class="xf-content-height">
+<div class="root container responsivegrid">
+<div id="container-091ad312c9" class="cmp-container">
+<div class="free-form-component">
+<style>
+      .show-for-large-up .column-control--narrow {max-width: max-content;}
+
+.show-for-large-up .columns {margin-top: auto; margin-bottom: auto;}
+
+.cigar-40off-promo-block .button {margin: 0; border: 2px solid #fff; border-radius: 999px; text-transform: none; padding: 14px 32px;}
+.cigar-40off-promo-block .text-4.section {margin-bottom: 0;}
+
+.show-for-large-up .flex-block-container>.section {margin-bottom: 0px;}
+.show-for-large-up .flex-block-container.desktop-four>.section {max-height: 80px;}
+
+.show-for-large-up .flex-open-block:nth-child(1) { width: 20%; }
+.show-for-large-up .flex-open-block:nth-child(2) { width: 20%; }
+.show-for-large-up .flex-open-block:nth-child(3) { width: 10%; }
+.show-for-large-up .flex-open-block:nth-child(4) { width: 30%; }
+.show-for-large-up .flex-open-block:nth-child(5) { width: 20%; }
+
+@media (min-width:1401px) and (max-width: 1499px) {
+.cigar-banner .row.column-control--super-wide {max-width: 1200px !important;}
+}
+
+@media (min-width:1280px) and (max-width:1400px) {
+.cigar-banner .row.column-control--super-wide {max-width: 1000px !important;}
+}
+
+@media screen and (max-width:450px) {
+.text-4.section {margin-bottom:0px !important;}
+}
+
+.close-promo {
+    color: #130F25;
+    position: absolute;
+    font-size: 18px;
+    right: 10px;
+    top: -10px;
+    z-index: 999;
+    padding: 10px;
+}
+
+.close-promo:hover {
+    cursor: pointer;
+    color: #89a4c7;
+}
+  </style>
+<script type="text/javascript">
+    (function ($) {
+    $(function ($) {
+        // Set the date we're counting down to
+        let promoStart = new Date('Feb 28, 2023 17:00:00 GMT-0700').getTime();
+        let oneMoreDay = new Date('Mar 15, 2023 17:00:00 GMT-0600').getTime();
+        let endsToday = new Date('Mar 16, 2023 17:00:00 GMT-0600').getTime();
+        let saleExtended = new Date('Mar 17, 2023 17:00:00 GMT-0600').getTime();
+        let promoEnds = new Date('Apr 1, 2023 00:00:00 GMT-0600').getTime();
+
+        // Get today's date and time
+        let now = new Date().getTime();
+
+        if (oneMoreDay < now && now < endsToday){
+            $(".40off-subtitle b").text("Ends tomorrow!");
+        } else if (endsToday < now && now < saleExtended){
+            $(".40off-subtitle b").text("Ends today");
+        } else if (saleExtended < now && now < promoEnds){
+            $(".40off-subtitle b").text("Sale extended");
+        } else if (promoEnds < now){
+            $(".cigar-40off-promo-block").hide();
+        }
+
+    });
+})(jQuery);
+  </script>
+</div>
+<div class="generic-block">
+<div id="cigar-40off-promo-block_" class="hidden"></div>
+<div class="generic-block-wrapper lazy-bg    block block--custom-color block--center generic-block--auto generic-block--vertical-center padding-top-zero padding-bottom-zero cigar-40off-promo-block     clearfix" style="background: #FF1675;">
+<div class="main clearfix">
+<div class="content clearfix"><div class="free-form-component section">
+<div class="close-promo">✖</div>
+<script type="text/javascript">
+    const closePromo = jQuery('.close-promo');
+const promo = closePromo.closest('.cigar-40off-promo-block');
+closePromo.on('click', () => {
+    console.log("close button");
+    promo.slideUp(100);
+    Utils.cookies.setCookie('promo-closed', 'true', window.location.hostname, '/', 7);
+});
+  </script>
+</div>
+<div class="generic-block section">
+<div id="show-for-large-up_" class="hidden"></div>
+<div class="generic-block-wrapper lazy-bg    block block--transparent block--center generic-block--auto generic-block--vertical-center padding-top-zero padding-bottom-zero show-for-large-up     clearfix" style="background-image: url('/content/dam/pluralsight2/promo/2023/2023-q1-desktop-banner-bg.webp');background-position:center right;background-size:cover;background-repeat:no-repeat;">
+<div class="main clearfix">
+<div class="content clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large padding-top-ten padding-bottom-ten column-control--super-wide">
+<div class="columns large-12 small-12"><div class="flex-block section">
+<div class="flex-block-container flex-section   desktop-five tablet-one mobile-one "><div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--left flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="image section">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/pluralsight-creative-team/creative_portfolio/brand_strategic_refresh2022program/brand_strategic_refreshcreativeexploration2022project/final/products/skills/Pluralsight-Product-Logo-Skills-White.png" alt="Pluralsight Skills" style="  max-width: 115px;" class=" " />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="image section">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/pluralsight-creative-team/creative_portfolio/brand_strategic_refresh2022program/brand_strategic_refreshcreativeexploration2022project/final/products/skills/Pluralsight-Product-Logo-Skills-White.png" alt="Pluralsight Skills" style="  max-width: 115px;" class=" " />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--left flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--wide">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-f074f30601" class="cmp-text">
+<h2 class="title--center" style="	font-size: 40.0px;
+	margin-bottom: 0;
+">50% off</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--wide">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-f074f30601" class="cmp-text">
+<h2 class="title--center" style="	font-size: 40.0px;
+	margin-bottom: 0;
+">50% off</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--right flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-81c02568db" class="cmp-text">
+<p class="text-left" style="	font-size: 14.0px;
+	margin-bottom: 0;
+">Annual Standard and Premium plans</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-81c02568db" class="cmp-text">
+<p class="text-left" style="	font-size: 14.0px;
+	margin-bottom: 0;
+">Annual Standard and Premium plans</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--right flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-8fd76ab659" class="cmp-text">
+<p class="40off-subtitle text-center" style="	font-size: 20.0px;
+	text-align: center;
+	color: rgb(19,15,37);
+	margin-bottom: 0;
+"><b>For a limited time</b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-8fd76ab659" class="cmp-text">
+<p class="40off-subtitle text-center" style="	font-size: 20.0px;
+	text-align: center;
+	color: rgb(19,15,37);
+	margin-bottom: 0;
+"><b>For a limited time</b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--left flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="ps-button section">
+<div data-emptytext="Button" class="psbutton--center">
+<div>
+<a href="/offer/2023/q1-2023-5-day-50-off" target="_self" style="background-color: #242145; color: #fff; border: 1px solid #242145; " class="button  button--custom 15  " data-aa-title="sign-up-q1-50off">
+Save now
+</a>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="ps-button section">
+<div data-emptytext="Button" class="psbutton--center">
+<div>
+<a href="/offer/2023/q1-2023-5-day-50-off" target="_self" style="background-color: #242145; color: #fff; border: 1px solid #242145; " class="button  button--custom 15  " data-aa-title="sign-up-q1-50off">
+Save now
+</a>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large padding-top-ten padding-bottom-ten column-control--super-wide">
+<div class="columns large-12 small-12"><div class="flex-block section">
+<div class="flex-block-container flex-section   desktop-five tablet-one mobile-one "><div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--left flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+ <div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="image section">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/pluralsight-creative-team/creative_portfolio/brand_strategic_refresh2022program/brand_strategic_refreshcreativeexploration2022project/final/products/skills/Pluralsight-Product-Logo-Skills-White.png" alt="Pluralsight Skills" style="  max-width: 115px;" class=" " />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="image section">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/pluralsight-creative-team/creative_portfolio/brand_strategic_refresh2022program/brand_strategic_refreshcreativeexploration2022project/final/products/skills/Pluralsight-Product-Logo-Skills-White.png" alt="Pluralsight Skills" style="  max-width: 115px;" class=" " />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--left flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--wide">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-f074f30601" class="cmp-text">
+<h2 class="title--center" style="	font-size: 40.0px;
+	margin-bottom: 0;
+">50% off</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--wide">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-f074f30601" class="cmp-text">
+<h2 class="title--center" style="	font-size: 40.0px;
+	margin-bottom: 0;
+">50% off</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--right flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-81c02568db" class="cmp-text">
+<p class="text-left" style="	font-size: 14.0px;
+	margin-bottom: 0;
+">Annual Standard and Premium plans</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-81c02568db" class="cmp-text">
+<p class="text-left" style="	font-size: 14.0px;
+	margin-bottom: 0;
+">Annual Standard and Premium plans</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--right flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-8fd76ab659" class="cmp-text">
+<p class="40off-subtitle text-center" style="	font-size: 20.0px;
+	text-align: center;
+	color: rgb(19,15,37);
+	margin-bottom: 0;
+"><b>For a limited time</b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-8fd76ab659" class="cmp-text">
+<p class="40off-subtitle text-center" style="	font-size: 20.0px;
+	text-align: center;
+	color: rgb(19,15,37);
+	margin-bottom: 0;
+"><b>For a limited time</b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--left flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="ps-button section">
+<div data-emptytext="Button" class="psbutton--center">
+<div>
+<a href="/offer/2023/q1-2023-5-day-50-off" target="_self" style="background-color: #242145; color: #fff; border: 1px solid #242145; " class="button  button--custom 15  " data-aa-title="sign-up-q1-50off">
+Save now
+</a>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="ps-button section">
+<div data-emptytext="Button" class="psbutton--center">
+<div>
+<a href="/offer/2023/q1-2023-5-day-50-off" target="_self" style="background-color: #242145; color: #fff; border: 1px solid #242145; " class="button  button--custom 15  " data-aa-title="sign-up-q1-50off">
+Save now
+</a>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="generic-block section">
+<div id="hide-for-large-up_" class="hidden"></div>
+<div class="generic-block-wrapper lazy-bg    block block--transparent block--left generic-block--auto  padding-top-zero padding-bottom-zero hide-for-large-up     clearfix" style="background-image: url('/content/dam/pluralsight2/promo/2023/2023-q1-mobile-banner-bg.webp');background-position:top left;background-size:cover;background-repeat:no-repeat;">
+<div class="main clearfix">
+<div class="content clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row medium">
+<div class="columns medium-12 small-12"><div class="spacer section">
+<div class="spacer  " style="height:48px"></div>
+</div>
+<div class="image section">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/pluralsight-creative-team/creative_portfolio/brand_strategic_refresh2022program/brand_strategic_refreshcreativeexploration2022project/final/products/skills/Pluralsight-Product-Logo-Skills-White.png" alt="pluralsight skills logo" style="  max-width: 90px;" class="image--center " />
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:25px"></div>
+</div>
+<div class="text-4 text section">
+<div id="text-4-a8edb04120" class="cmp-text">
+<h2 class="title--center" style="	font-size: 50.0px;
+">50% off</h2>
+<p class="text-center" style="	font-size: 14.0px;
+">Annual Standard and Premium plans</p>
+<p class="40off-subtitle text-center" style="	font-size: 14.0px;
+	color: rgb(19,15,37);
+"><b>For a limited time</b></p>
+</div>
+</div>
+<div class="ps-button section">
+<div data-emptytext="Button" class="psbutton--center">
+<div>
+<a href="/offer/2023/q1-2023-5-day-50-off" target="_self" style="background-color: #242145; color: #fff; border: 1px solid #242145; " class="button  button--custom 15  " data-aa-title="sign-up-q1-50off">
+Save now
+</a>
+</div>
+</div></div>
+<div class="spacer section">
+<div class="spacer  " style="height:48px"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="free-form-component section">
+<div class="close-promo">✖</div>
+<script type="text/javascript">
+    const closePromo = jQuery('.close-promo');
+const promo = closePromo.closest('.cigar-40off-promo-block');
+closePromo.on('click', () => {
+    console.log("close button");
+    promo.slideUp(100);
+    Utils.cookies.setCookie('promo-closed', 'true', window.location.hostname, '/', 7);
+});
+  </script>
+</div>
+<div class="generic-block section">
+<div id="show-for-large-up_" class="hidden"></div>
+<div class="generic-block-wrapper lazy-bg    block block--transparent block--center generic-block--auto generic-block--vertical-center padding-top-zero padding-bottom-zero show-for-large-up     clearfix" style="background-image: url('/content/dam/pluralsight2/promo/2023/2023-q1-desktop-banner-bg.webp');background-position:center right;background-size:cover;background-repeat:no-repeat;">
+<div class="main clearfix">
+<div class="content clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large padding-top-ten padding-bottom-ten column-control--super-wide">
+<div class="columns large-12 small-12"><div class="flex-block section">
+<div class="flex-block-container flex-section   desktop-five tablet-one mobile-one "><div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--left flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="image section">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/pluralsight-creative-team/creative_portfolio/brand_strategic_refresh2022program/brand_strategic_refreshcreativeexploration2022project/final/products/skills/Pluralsight-Product-Logo-Skills-White.png" alt="Pluralsight Skills" style="  max-width: 115px;" class=" " />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="image section">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/pluralsight-creative-team/creative_portfolio/brand_strategic_refresh2022program/brand_strategic_refreshcreativeexploration2022project/final/products/skills/Pluralsight-Product-Logo-Skills-White.png" alt="Pluralsight Skills" style="  max-width: 115px;" class=" " />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--left flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--wide">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-f074f30601" class="cmp-text">
+<h2 class="title--center" style="	font-size: 40.0px;
+	margin-bottom: 0;
+">50% off</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--wide">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-f074f30601" class="cmp-text">
+<h2 class="title--center" style="	font-size: 40.0px;
+	margin-bottom: 0;
+">50% off</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--right flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-81c02568db" class="cmp-text">
+<p class="text-left" style="	font-size: 14.0px;
+	margin-bottom: 0;
+">Annual Standard and Premium plans</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-81c02568db" class="cmp-text">
+<p class="text-left" style="	font-size: 14.0px;
+	margin-bottom: 0;
+">Annual Standard and Premium plans</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--right flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-8fd76ab659" class="cmp-text">
+<p class="40off-subtitle text-center" style="	font-size: 20.0px;
+	text-align: center;
+	color: rgb(19,15,37);
+	margin-bottom: 0;
+"><b>For a limited time</b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-8fd76ab659" class="cmp-text">
+<p class="40off-subtitle text-center" style="	font-size: 20.0px;
+	text-align: center;
+	color: rgb(19,15,37);
+	margin-bottom: 0;
+"><b>For a limited time</b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--left flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="ps-button section">
+<div data-emptytext="Button" class="psbutton--center">
+<div>
+<a href="/offer/2023/q1-2023-5-day-50-off" target="_self" style="background-color: #242145; color: #fff; border: 1px solid #242145; " class="button  button--custom 15  " data-aa-title="sign-up-q1-50off">
+Save now
+</a>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="ps-button section">
+<div data-emptytext="Button" class="psbutton--center">
+<div>
+<a href="/offer/2023/q1-2023-5-day-50-off" target="_self" style="background-color: #242145; color: #fff; border: 1px solid #242145; " class="button  button--custom 15  " data-aa-title="sign-up-q1-50off">
+Save now
+</a>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large padding-top-ten padding-bottom-ten column-control--super-wide">
+<div class="columns large-12 small-12"><div class="flex-block section">
+<div class="flex-block-container flex-section   desktop-five tablet-one mobile-one "><div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--left flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="image section">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/pluralsight-creative-team/creative_portfolio/brand_strategic_refresh2022program/brand_strategic_refreshcreativeexploration2022project/final/products/skills/Pluralsight-Product-Logo-Skills-White.png" alt="Pluralsight Skills" style="  max-width: 115px;" class=" " />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="image section">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/pluralsight-creative-team/creative_portfolio/brand_strategic_refresh2022program/brand_strategic_refreshcreativeexploration2022project/final/products/skills/Pluralsight-Product-Logo-Skills-White.png" alt="Pluralsight Skills" style="  max-width: 115px;" class=" " />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--left flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--wide">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-f074f30601" class="cmp-text">
+<h2 class="title--center" style="	font-size: 40.0px;
+	margin-bottom: 0;
+">50% off</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--wide">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-f074f30601" class="cmp-text">
+<h2 class="title--center" style="	font-size: 40.0px;
+	margin-bottom: 0;
+">50% off</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--right flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-81c02568db" class="cmp-text">
+<p class="text-left" style="	font-size: 14.0px;
+	margin-bottom: 0;
+">Annual Standard and Premium plans</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-81c02568db" class="cmp-text">
+<p class="text-left" style="	font-size: 14.0px;
+	margin-bottom: 0;
+">Annual Standard and Premium plans</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--right flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-8fd76ab659" class="cmp-text">
+<p class="40off-subtitle text-center" style="	font-size: 20.0px;
+	text-align: center;
+	color: rgb(19,15,37);
+	margin-bottom: 0;
+"><b>For a limited time</b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="text-4 text section">
+<div id="text-4-8fd76ab659" class="cmp-text">
+<p class="40off-subtitle text-center" style="	font-size: 20.0px;
+	text-align: center;
+	color: rgb(19,15,37);
+	margin-bottom: 0;
+"><b>For a limited time</b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-open-block section">
+<div class="flex-open-block-wrapper lazy-bg block--transparent block--left flex-open-block--vertical-center   clearfix">
+<div class="main clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="ps-button section">
+<div data-emptytext="Button" class="psbutton--center">
+<div>
+<a href="/offer/2023/q1-2023-5-day-50-off" target="_self" style="background-color: #242145; color: #fff; border: 1px solid #242145; " class="button  button--custom 15  " data-aa-title="sign-up-q1-50off">
+Save now
+</a>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder clearfix" style="visibility:hidden"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row large column-control--narrow">
+<div class="columns customPadding large-12 small-12" style="padding-right: 0 !important; padding-left: 0 !important; "><div class="ps-button section">
+<div data-emptytext="Button" class="psbutton--center">
+<div>
+<a href="/offer/2023/q1-2023-5-day-50-off" target="_self" style="background-color: #242145; color: #fff; border: 1px solid #242145; " class="button  button--custom 15  " data-aa-title="sign-up-q1-50off">
+Save now
+</a>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="generic-block section">
+<div id="hide-for-large-up_" class="hidden"></div>
+<div class="generic-block-wrapper lazy-bg    block block--transparent block--left generic-block--auto  padding-top-zero padding-bottom-zero hide-for-large-up     clearfix" style="background-image: url('/content/dam/pluralsight2/promo/2023/2023-q1-mobile-banner-bg.webp');background-position:top left;background-size:cover;background-repeat:no-repeat;">
+<div class="main clearfix">
+<div class="content clearfix"><div class="column-control section">
+<div class="container column-control-container">
+<div class="row medium">
+<div class="columns medium-12 small-12"><div class="spacer section">
+<div class="spacer  " style="height:48px"></div>
+</div>
+<div class="image section">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/pluralsight-creative-team/creative_portfolio/brand_strategic_refresh2022program/brand_strategic_refreshcreativeexploration2022project/final/products/skills/Pluralsight-Product-Logo-Skills-White.png" alt="pluralsight skills logo" style="  max-width: 90px;" class="image--center " />
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:25px"></div>
+</div>
+<div class="text-4 text section">
+<div id="text-4-a8edb04120" class="cmp-text">
+<h2 class="title--center" style="	font-size: 50.0px;
+">50% off</h2>
+<p class="text-center" style="	font-size: 14.0px;
+">Annual Standard and Premium plans</p>
+<p class="40off-subtitle text-center" style="	font-size: 14.0px;
+	color: rgb(19,15,37);
+"><b>For a limited time</b></p>
+</div>
+</div>
+<div class="ps-button section">
+<div data-emptytext="Button" class="psbutton--center">
+<div>
+<a href="/offer/2023/q1-2023-5-day-50-off" target="_self" style="background-color: #242145; color: #fff; border: 1px solid #242145; " class="button  button--custom 15  " data-aa-title="sign-up-q1-50off">
+Save now
+</a>
+</div>
+</div></div>
+<div class="spacer section">
+<div class="spacer  " style="height:48px"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="site-promo" style="display:none;">
+<div id="site-promo-content"></div>
+<div class="promo-close-button">&times;</div>
+</div>
+<script>
+  var noDBpromo=true;function showPromoIfPermitted(){if(document.cookie.indexOf("site-promo-closed=1")==-1||window.blockPromoHide){if(jQuery("#site-promo .promo-wrapper-contents").length>-1&&jQuery("#site-promo .promo-wrapper-contents").html()!=undefined&&jQuery("#site-promo .promo-wrapper-contents").html().trim()!=""){jQuery("#site-promo").slideDown(300)}jQuery("#site-promo .promo-close-button").click(function(){var d=new Date();d.setTime(d.getTime()+(12*60*60*1000));document.cookie="site-promo-closed=1; expires="+d.toUTCString()+"; path=/";jQuery("#site-promo").slideUp(300)});window.promoShown=true;if(window.setStickies){window.setStickies()}dtmEventTrigger("ps.promoShown",{})}}function promoCheck(){window.promoCheckRan=true;if(document.URL.indexOf("b2b=true")>-1||document.URL.indexOf("nopromos=true")>-1){var d=new Date();d.setTime(d.getTime()+(7*24*60*60*1000));document.cookie="nopromos=1; expires="+d.toUTCString()+"; path=/; domain=pluralsight.com"}if(document.cookie.indexOf("nopromos=1")==-1&&(window.location.host=='www.pluralsight.com'||window.location.host=='www-preview.pluralsight.com'||window.location.host=='www-dev.pluralsight.com'||window.location.host=='www-stage.pluralsight.com'||window.location.host=='learn.pluralsight.com'||window.location.host=='learn-stage.pluralsight.com'||window.location.host=='learn-dev.pluralsight.com'||window.location.host=='www.javascript.com'||window.location.host=='www-stage.javascript.com'||window.location.host=='www-dev.javascript.com'||window.location.host=='www-preview.javascript.com')){var isStage=false;if(window.location.host.indexOf("-stage.")>-1){isStage=true}var company="none";var audience="none";var mstime=(new Date()).valueOf();if(!noDBpromo&&dnbData.companyName){company=dnbData.companyName;audience=dnbData.industryNaics}jQuery.ajax({url:"/discounts/api/global-promo?company="+encodeURIComponent(company)+"&audience="+encodeURIComponent(audience)+"&time="+mstime,headers:{authorization:"aem"}}).done(function(promoData){if(promoData.campaignId||window.forceCampaignCode){window.globalPromos=promoData.promos;window.campaignCode=window.forceCampaignCode||promoData.campaignId;jQuery.ajax({url:"/content/pluralsight/en/global/promos/"+campaignCode+".html?time="+mstime}).done(function(bannerPage){var domainTransform=function(urlString){if(window.location.host=='learn.pluralsight.com'||window.location.host=='learn-stage.pluralsight.com'||window.location.host=='learn-dev.pluralsight.com'||window.location.host=='www.javascript.com'||window.location.host=='www-preview.javascript.com'||window.location.host=='www-dev.javascript.com'||window.location.host=='www-stage.javascript.com'){if(urlString.indexOf("/jscom")==0&&window.location.hostname.indexOf("javascript.com")>-1){urlString=urlString.substring(6,urlString.length)}else if(urlString.indexOf("/landing-pages")==0&&(window.location.hostname=="learn.pluralsight.com"||window.location.hostname=="learn-stage.pluralsight.com"||window.location.hostname=="learn-dev.pluralsight.com")){urlString=urlString.substring(14,urlString.length)}else{urlString="////";}}return urlString};var blockedPaths=jQuery(bannerPage).find(".promo-block-filters").data("blockedpaths");var blockedPathsArray=blockedPaths?blockedPaths.split(","):[];var isBlocked=false;for(i in blockedPathsArray){var blockedPath=blockedPathsArray[i].trim();if(blockedPath.indexOf("=")==0){blockedPath=blockedPath.substring(1,blockedPath.length);if(window.location.pathname==domainTransform(blockedPath)){isBlocked=true;if(isStage){console.log("Promo banners blocked on page.")}}}else if(window.location.pathname.indexOf(domainTransform(blockedPath))==0){isBlocked=true;if(isStage){console.log("Promo banners blocked on page.")}}}if(!isBlocked){var $banners=jQuery(bannerPage).find(".promo-wrapper-filter");var bannerFound=false;jQuery.each($banners,function(key,item){var allowedPaths=jQuery(item).data("allowedpaths");var allowedPathsArray=allowedPaths?allowedPaths.split(","):[];var isAllowed=false;for(i in allowedPathsArray){var allowedPath=allowedPathsArray[i].trim();if(allowedPath.indexOf("=")==0){allowedPath=allowedPath.substring(1,allowedPath.length);if(window.location.pathname==domainTransform(allowedPath)){isAllowed=true}}else if(window.location.pathname.indexOf(domainTransform(allowedPath))==0){isAllowed=true}}if(isAllowed){$content=jQuery(item);jQuery("#site-promo-content").empty().append($content);jQuery("#site-promo-content img[data-lazysrc], #site-promo-content .lazy-bg").each(function(index,item){if(typeof loadLazysrc!="undefined"){loadLazysrc(item)}});window.blockPromoHide=jQuery(item).data("blockhiding");showPromoIfPermitted();bannerFound=true;return false}});if(!bannerFound){if(isStage){console.log("No allowed banner found on promo config page.")}}}}).fail(function(){if(isStage){console.log("No promo page found for campaign code "+campaignCode)}});window.promoTriggered=true;dtmEventTrigger("ps.promoTriggered",{})}window.promoCheckCompleted=true})}}if(window.dnbData.status||noDBpromo){promoCheck()}setTimeout(function(){if(!window.promoCheckRan){window.promoCheck()}},3000);
+</script>
+<div>
+<script type="text/javascript" src="//customer.cludo.com/scripts/bundles/search-script.min.js"></script>
+<script>
+
+        var element = document.createElement("link");
+        element.setAttribute("rel", "stylesheet");
+        element.setAttribute("type", "text/css");
+        element.setAttribute("href", "https://customer.cludo.com/css/templates/v1.1/essentials/cludo-search.min.css");
+        document.getElementsByTagName("head")[0].appendChild(element);
+
+        var CludoSearch;
+        (function () {
+            var cludoSettings = {customerId: 10000847, engineId: 10001278, searchUrl: 'https://www.pluralsight.com/search.html', language: 'en', searchInputs: ['cludo-search-form'], hideSearchFilters: true, type: 'inline'};
+            CludoSearch= new Cludo(cludoSettings);
+            CludoSearch.init();
+        })();
+
+    </script>
+<!--[if lte IE 9]>
+    <script src="https://api.cludo.com/scripts/xdomain.js" slave="https://api.cludo.com/proxy.html" type="text/javascript"></script>
+    <![endif]-->
+</div>
+<div id="course-banner" class="clearfix">
+</div>
+<div id="content" role="main"><div class="paths-content paths-v2-variation">
+<div class="paths-content-main">
+<div class="row column-control--super-wide">
+<div class="large-12 columns">
+<div class="paths-content-breadcrumb">
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/browse">Browse</a></li>
+<li><a href="/product/paths">Paths</a></li>
+</ul>
+</div>
+<div class="paths-content-container">
+<div class="paths-content-left">
+<h6>Learning Paths</h6>
+<h1>Angular</h1>
+<div class="paths-list-details">
+<ul>
+<li><img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course-play-icon.png" class="paths-icon" alt="Number of Courses" width="18" height="17" /><span>18 courses</span></li>
+<li><img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /><span>66 hours</span></li>
+<li class="tooltip-enabled" data-tooltip="Measure your skill to find out where to start.">
+<svg class="paths-icon" viewBox="0 0 512 512"><title>Skill IQ available</title><defs><linearGradient x1="23.812%" y1="22.445%" x2="100%" y2="100%" id="icon-datacamp-linearGradient"><stop stop-color="#F05A28" offset="0%"></stop><stop stop-color="#EC008C" offset="100%"></stop></linearGradient></defs><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill-rule="nonzero"><path d="M512,256 L512,512 L256,512 C114.615104,512 0,397.384896 0,256 C0,114.615104 114.615104,0 256,0 C397.384896,0 512,114.615104 512,256 Z" fill="url(#icon-datacamp-linearGradient)"></path><circle fill="#222222" cx="260.736" cy="260.736" r="132.736"></circle></g></g></svg>
+<span>Skill IQ</span>
+</li>
+
+<li class="has-projects tooltip-enabled" data-tooltip="Practice by applying it to real-world scenarios.">
+<svg class="paths-icon" width="20px" height="20px" role="image" aria-label="project icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 Z M7,12 C7,9.23857625 9.23857625,7 12,7 C12.5212208,7 13.0238143,7.07975342 13.4962427,7.22772268 C13.6120712,7.2640013 13.6765591,7.38730846 13.6402804,7.50313693 C13.6296781,7.5369875 13.6110396,7.56776872 13.585957,7.59285129 L10.5900002,10.5887958 L13.4184273,13.4172229 L16.4050838,10.4306194 C16.4927477,10.3429555 16.634879,10.3429555 16.7225429,10.4306194 C16.7483821,10.4564585 16.7675225,10.4882151 16.7783019,10.5231311 C16.9224102,10.9899178 17,11.4858979 17,12 C17,14.7614237 14.7614237,17 12,17 C11.3551407,17 10.7387942,16.8779225 10.17281,16.6556171 L7.9360653,18.8923618 C9.12709181,19.5961412 10.5163828,20 12,20 C16.418278,20 20,16.418278 20,12 C20,7.581722 16.418278,4 12,4 C7.581722,4 4,7.581722 4,12 C4,13.4836172 4.40385879,14.8729082 5.10763818,16.0639347 L7.3443829,13.82719 C7.12207751,13.2612058 7,12.6448593 7,12 Z"></path></svg>
+<span>1 Project</span>
+</li>
+
+</ul>
+</div>
+<div class="paths-content-description">
+<p>Angular is a complete JavaScript framework for creating dynamic and interactive applications in HTML. Aside from being one of the hottest frameworks on the web, Angular is easy to learn yet powerful enough to help you develop complex single-page web applications. This path includes content covering Angular 2 and beyond. For the original version, see our AngularJS path.</p>
+</div>
+<div class="paths-content-courses">
+<h2>Courses in this path</h2>
+<div class="row border-top difficulty-container active">
+<div class="difficulty-header">
+<h4>Beginner</h4>
+</div>
+<div class="difficulty-content row" style="display:block;">
+<p><p>Get started quickly learning the new version of Angular. You will be introduced to Angular core concepts, then discover best practices for setting up Angular apps with its CLI, and finally, begin to explore Angular features like forms.</p>
+</p>
+<div class="path-content-course-items">
+<a href="/courses/angular-14-big-picture">
+<h3>Angular 14: The Big Picture</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Joe Eames</li>
+<li>1h 17m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> &nbsp;(17)</li>
+</ul>
+</div>
+</a>
+</div>
+<div class="path-content-course-items">
+<a href="/courses/angular-2-getting-started-update">
+<h3>Angular: Getting Started</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Deborah Kurata</li>
+<li>5h 51m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> &nbsp;(5916)</li>
+</ul>
+</div>
+</a>
+</div>
+
+<div class="path-content-course-items">
+<a href="/courses/angular-forms">
+<h3>Angular Forms</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Mark Zamoyta</li>
+<li>2h 2m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> &nbsp;(366)</li>
+</ul>
+</div>
+</a>
+</div>
+<div class="path-content-course-items">
+<a href="/courses/angular-cli">
+<h3>Angular CLI</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by John Papa</li>
+<li>3h 8m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> &nbsp;(593)</li>
+</ul>
+</div>
+</a>
+</div>
+<div class="path-content-course-items">
+<a href="/courses/styling-angular-applications">
+<h3>Styling Angular 14 Applications</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Brian Treese</li>
+<li>1h 52m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> &nbsp;(183)</li>
+</ul>
+</div>
+</a>
+</div>
+<div class="path-content-course-items">
+ <a href="/courses/angular-material">
+<h3>Styling Applications with Angular Material</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Ajden Towfeek</li>
+<li>3h 14m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> &nbsp;(328)</li>
+</ul>
+</div>
+</a>
+</div>
+<div class="path-content-course-items">
+<a href="/projects/build-an-album-store-product-page-with-angular">
+<h3>Build an Album Store Product Page with Angular</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Jon Friskics</li>
+<li>2h 30m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> &nbsp;(2283)</li>
+<li class="course-type">
+<div class="badge-icon"><svg id="icon-project" width="18px" height="18px" role="image" aria-label="project icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 Z M7,12 C7,9.23857625 9.23857625,7 12,7 C12.5212208,7 13.0238143,7.07975342 13.4962427,7.22772268 C13.6120712,7.2640013 13.6765591,7.38730846 13.6402804,7.50313693 C13.6296781,7.5369875 13.6110396,7.56776872 13.585957,7.59285129 L10.5900002,10.5887958 L13.4184273,13.4172229 L16.4050838,10.4306194 C16.4927477,10.3429555 16.634879,10.3429555 16.7225429,10.4306194 C16.7483821,10.4564585 16.7675225,10.4882151 16.7783019,10.5231311 C16.9224102,10.9899178 17,11.4858979 17,12 C17,14.7614237 14.7614237,17 12,17 C11.3551407,17 10.7387942,16.8779225 10.17281,16.6556171 L7.9360653,18.8923618 C9.12709181,19.5961412 10.5163828,20 12,20 C16.418278,20 20,16.418278 20,12 C20,7.581722 16.418278,4 12,4 C7.581722,4 4,7.581722 4,12 C4,13.4836172 4.40385879,14.8729082 5.10763818,16.0639347 L7.3443829,13.82719 C7.12207751,13.2612058 7,12.6448593 7,12 Z"></path></svg></div>
+<div class="badge-text">Project</div>
+</li>
+</ul>
+</div>
+</a>
+</div>
+ </div>
+</div>
+<div class="row border-top difficulty-container active">
+<div class="difficulty-header">
+<h4>Intermediate</h4>
+</div>
+<div class="difficulty-content row" style="display:block;">
+<p><p>Once you have the basics down, it’s time to dive deeper into Angular’s foundations. The courses in this section will help you better understand Angular as a whole, as well as taking a closer look at routing and different form approaches.</p>
+</p>
+<div class="path-content-course-items">
+<a href="/courses/angular-fundamentals">
+<h3>Angular 11 Fundamentals</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Jim Cooper</li>
+<li>9h 46m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> &nbsp;(1289)</li>
+</ul>
+</div>
+</a>
+</div>
+<div class="path-content-course-items">
+<a href="/courses/angular-routing">
+<h3>Angular Routing</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Deborah Kurata</li>
+<li>4h 48m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> &nbsp;(719)</li>
+</ul>
+</div>
+</a>
+</div>
+<div class="path-content-course-items">
+<a href="/courses/openid-and-oauth2-securing-angular-apps">
+<h3>Securing Angular Apps with OpenID Connect and OAuth 2</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Brian Noyes</li>
+<li>3h 10m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> &nbsp;(261)</li>
+</ul>
+</div>
+</a>
+</div>
+<div class="path-content-course-items">
+<a href="/courses/unit-testing-angular">
+<h3>Unit Testing in Angular 12</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Joe Eames</li>
+<li>3h 27m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> &nbsp;(401)</li>
+</ul>
+</div>
+</a>
+</div>
+<div class="path-content-course-items">
+<a href="/courses/angular-2-reactive-forms">
+<h3>Angular Reactive Forms</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Deborah Kurata</li>
+<li>3h 51m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> &nbsp;(819)</li>
+</ul>
+</div>
+</a>
+</div>
+<div class="path-content-course-items">
+<a href="/courses/rxjs-angular-reactive-development">
+<h3>RxJS in Angular: Reactive Development</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Deborah Kurata</li>
+<li>4h 33m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> &nbsp;(672)</li>
+</ul>
+</div>
+</a>
+</div>
+<div class="path-content-course-items">
+<a href="/courses/angular-ngrx-getting-started">
+<h3>Angular NgRx: Getting Started</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Deborah Kurata</li>
+<li>4h 14m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> &nbsp;(583)</li>
+</ul>
+</div>
+</a>
+</div>
+<div class="path-content-course-items">
+<a href="/courses/angular-http-communication">
+<h3>Angular 12 HTTP Communication</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Brice Wilson</li>
+<li>2h 33m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> &nbsp;(330)</li>
+</ul>
+</div>
+</a>
+</div>
+<div class="path-content-course-items">
+<a href="/courses/angular-services">
+<h3>Angular 12 Services</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Brice Wilson</li>
+<li>2h 17m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+ <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> &nbsp;(237)</li>
+</ul>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="row border-top difficulty-container active">
+<div class="difficulty-header">
+<h4>Advanced</h4>
+</div>
+<div class="difficulty-content row" style="display:block;">
+<p><p>After you become comfortable putting an Angular app together, advanced courses will help you optimize your development process.</p>
+</p>
+<div class="path-content-course-items">
+<a href="/courses/best-practices-angular">
+<h3>Angular 13 Best Practices</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Jim Cooper</li>
+<li>1h 48m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i> &nbsp;(384)</li>
+</ul>
+</div>
+</a>
+</div>
+<div class="path-content-course-items">
+<a href="/courses/angular-architecture-best-practices">
+<h3>Angular Architecture and Best Practices</h3>
+<div class="path-content-course-info">
+<ul>
+<li>by Dan Wahlin</li>
+<li>5h 21m <img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/course/clock.png" class="paths-icon" alt="Duration" width="15" height="15" /></li>
+<li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> &nbsp;(354)</li>
+</ul>
+</div>
+</a>
+</div>
+</div>
+</div>
+ </div>
+</div>
+<aside class="paths-content-right ">
+<div class="paths-content-highlight show-for-large-up">
+<section class="paths-content-section try-for-free">
+<h3>Try for free</h3>
+<p>Get this learning path plus top-rated picks in tech skills and other popular topics.</p>
+<div class="cta-buttons">
+
+<div class="ps-button section main-course-signup">
+<a href="/pricing/skills" class="button button--gradient free_trial_checkout" title="Start free trial now" data-aa-title="paths-hero-cta">Get started</a>
+</div>
+</div>
+</section>
+<section class="paths-content-section">
+<h3>Your 10 day free trial includes</h3>
+<div class="library-item">
+<div><img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/browse/pink-icons/courses-icon.png" alt="play icon" /></div>
+<div>
+<p><strong>Expert-led courses</strong></p>
+Keep up with the pace of change with thousands of expert-led, in-depth courses.
+</div>
+</div>
+</section>
+<section class="paths-content-section">
+<h3>For teams</h3>
+<p><a href="https://www.pluralsight.com/buy?sku=PROFESSIONAL-SG-PILOT&nomodal=true" data-product-sku="PROFESSIONAL-SG-PILOT"><strong>Give up to 10 users</strong></a> access to our full library including this path <strong>free for 30 days</strong></p>
+</section>
+</div>
+<div class="paths-content-highlight paths-aside-box show-for-large-up">
+
+<div class="paths-aside-scrollable">
+<h3>What you will learn</h3>
+<ul><li>Angular core concepts</li><li>Angular CLI</li><li>Forms</li><li>Components</li><li>Routing</li><li>Services</li><li>Dependency injection</li><li>Unit testing</li><li>Advanced workflows</li></ul>
+</div>
+
+<hr />
+<h3>Experience</h3>
+<p>This path is intended for beginners and no prerequisites are required.</p>
+</div>
+<div class="paths-content-tags">
+<h2>Other related topics</h2>
+<ul>
+<li><a href="/search?q=Web%20Developer">Web Developer</a></li>
+<li><a href="/search?q=Front-end%20Developer">Front-end Developer</a></li>
+<li><a href="/search?q=Software%20Engineer">Software Engineer</a></li>
+<li><a href="/search?q=JavaScript">JavaScript</a></li>
+<li><a href="/search?q=React">React</a></li>
+<li><a href="/search?q=HTML5">HTML5</a></li>
+</ul>
+</div>
+<div class="paths-content-skilliq">
+<div>
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/skill-iq-logo-white.png" width="80" alt="Skill IQ" />
+<h4>Not sure where to start?</h4>
+<p>See where your skills stand and where you can grow.</p>
+<a class="button--secondary--white button" href="https://www.pluralsight.com/redeemlink/genericV4?redemptionId=7a28c861-d736-41d3-842a-28a97d8e5714&mac=368c7cca1cac8158bae0da91fa137b5d01891402f7f7119a10a6a8be938da98a">
+Take a skill assessment
+</a>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+</div>
+<div class="paths-content-authors">
+<div class="row column-control--super-wide">
+<div class="large-12 columns">
+<h2>Learn with the best</h2>
+<div class="paths-content-author author-multi">
+<div class="author-info">
+<div class="author-info-detail">
+<div class="author-pic"><img src="https://pluralsight.imgix.net/author/lg/joe-eames-v1.jpg" alt="Joe Eames" /></div>
+<div class="author-name">Joe Eames</div>
+</div>
+<div class="author-info-bio">
+Joe began his love of programming on an Apple III in BASIC. Although his preferred language is JavaScript, he has worked professionally with just about every major Microsoft language. He is currently a consultant and full time author for Pluralsight. Joe has always had a strong interest in education, and has worked both full and part time as a technical teacher for over ten years. He is a frequent blogger and speaker, organizer of ng-conf, the AngularJS conference (www.ng-conf.org), and a paneli<span>... <a href="#" onclick="javascript:jQuery(this).parent().hide().parent().find('.trimmed-text').fadeIn(250);return false;">more</a></span><span class="trimmed-text" style="display: none;">st on the JavaScript Jabber podcast (http://javascriptjabber.com/)</span>
+</div>
+</div>
+<div class="author-info">
+<div class="author-info-detail">
+<div class="author-pic"><img src="https://pluralsight.imgix.net/author/lg/deborah-kurata-v1.jpg" alt="Deborah Kurata" /></div>
+<div class="author-name">Deborah Kurata</div>
+</div>
+<div class="author-info-bio">
+Deborah Kurata is a software developer, YouTube content creator, consultant, conference speaker, and Pluralsight author. Her courses include: Angular: Getting Started, Angular Routing, and Object-Oriented Programming Fundamentals in C#. For her work in support of software developers, she has been recognized with the Microsoft Most Valuable Professional (MVP) award, and is a Google Developer Expert (GDE).
+</div>
+</div>
+<div class="author-info">
+<div class="author-info-detail">
+<div class="author-pic"><img src="https://pluralsight.imgix.net/author/lg/mark-zamoyta-v1.jpg" alt="Mark Zamoyta" /></div>
+<div class="author-name">Mark Zamoyta</div>
+</div>
+<div class="author-info-bio">
+Mark started in the developer world over 25 years ago. He began his career with a Bachelor of Science in Computer Science from St. Johns University. After spending 10 years on Wall Street working for Goldman Sachs, Lehman Brothers and other major investment banks, Mark became interested in animation and video game software. He has written numerous mobile apps and games for clients including Electronic Arts and Yahoo! Games. Some of his popular mobile titles include Yahtzee, Yahoo! Chess, and Yah<span>... <a href="#" onclick="javascript:jQuery(this).parent().hide().parent().find('.trimmed-text').fadeIn(250);return false;">more</a></span><span class="trimmed-text" style="display: none;">oo! Poker. Currently, Mark is the founder of Curious Inventions in Portland, Oregon. This company develops a wide range of entertainment and educational software titles for the web and mobile devices. </span>
+</div>
+</div>
+<div class="author-info">
+<div class="author-info-detail">
+<div class="author-pic"><img src="https://pluralsight.imgix.net/author/lg/john-papa-v1.jpg" alt="John Papa" /></div>
+<div class="author-name">John Papa</div>
+</div>
+<div class="author-info-bio">
+John Papa is a Principal Developer Advocate with Microsoft and an alumni of the Google Developer Expert, Microsoft Regional Director, and MVP programs. He's passionate about Web and mobile technologies, and often enjoys speaking around the world at keynotes and sessions for conferences, including NgConf, Build, Ignite, VSLive, and AngleBrackets. John is a co-host of the popular Adventures in Angular podcast, author of the Angular Style Guide, several books, and many popular Pluralsight courses. <span>... <a href="#" onclick="javascript:jQuery(this).parent().hide().parent().find('.trimmed-text').fadeIn(250);return false;">more</a></span><span class="trimmed-text" style="display: none;">You can reach him at johnpapa.net or on twitter at @john_papa.</span>
+</div>
+</div>
+<div class="author-info">
+<div class="author-info-detail">
+<div class="author-pic"><img src="https://pluralsight.imgix.net/author/lg/brian-treese-v1.jpg" alt="Brian Treese" /></div>
+<div class="author-name">Brian Treese</div>
+</div>
+<div class="author-info-bio">
+Brian Treese is the Chief of UX at SoCreate, a company building a fun and easy way to turn great ideas into movie & TV show scripts. Technically a Web Designer (he's always loved the aesthetic side of the web), but his expertise does not stop at Photoshop and Illustrator. He's been building websites for over a decade using technologies such as HTML, CSS, SASS, SVG, JavaScript, Angular, jQuery, ASP.Net, PHP, and more. While he very much enjoys building things, he also loves to learn and he finds <span>... <a href="#" onclick="javascript:jQuery(this).parent().hide().parent().find('.trimmed-text').fadeIn(250);return false;">more</a></span><span class="trimmed-text" style="display: none;">enjoyment in sharing his knowledge with others in the field or aspiring to take the plunge into the wonderful world of web development. </span>
+</div>
+</div>
+<div class="author-info">
+<div class="author-info-detail">
+<div class="author-pic"><img src="https://pluralsight.imgix.net/author/lg/ajden-towfeek-v1.jpg" alt="Ajden Towfeek" /></div>
+<div class="author-name">Ajden Towfeek</div>
+</div>
+<div class="author-info-bio">
+Ajden has worked on everything from embedded devices to large-scale enterprise systems during his 10+ years in commercial software development. Since 2007, Ajden has focused on Microsoft technologies and more lately on web technologies. Ajden is also a speaker at conferences and has a passion for teaching. For screencasts on the latest web technology, make sure to check out his YouTube channel.
+</div>
+</div>
+<div class="author-info">
+<div class="author-info-detail">
+<div class="author-pic"><img src="https://pluralsight.imgix.net/author/lg/084cf302-7004-42cf-8f3a-0d061d06b5ee.jpg" alt="Jon Friskics" /></div>
+<div class="author-name">Jon Friskics</div>
+</div>
+<div class="author-info-bio">
+Jon is an author, developer, and Pluralsight team member via Code School. Lately, he's been working on content and products that help authors create content efficiently. Prior to that, he worked for several years on interactive learning at Code School, and later helped bring that to Pluralsight as Interactive Content.
+</div>
+</div>
+<div class="author-info">
+<div class="author-info-detail">
+<div class="author-pic"><img src="https://pluralsight.imgix.net/author/lg/jim-cooper-v1.jpg" alt="Jim Cooper" /></div>
+<div class="author-name">Jim Cooper</div>
+</div>
+<div class="author-info-bio">
+Jim Cooper is a software developer at Pluralsight, with more than 20 years of software development experience. He has a passion for Agile processes, especially lean software development. Jim has been developing production Angular apps since before Angular version 1.0, including Pluralsight's first Html5-based video player. Jim has over 10 years of TDD and pair programming experience which has contributed significantly to his professional development. He has successfully mentored other developers<span>... <a href="#" onclick="javascript:jQuery(this).parent().hide().parent().find('.trimmed-text').fadeIn(250);return false;">more</a></span><span class="trimmed-text" style="display: none;"> in the use of TDD and agile practices and still enjoys learning from talented developers everywhere.</span>
+</div>
+</div>
+<div class="author-info">
+<div class="author-info-detail">
+<div class="author-pic"><img src="https://pluralsight.imgix.net/author/lg/brian-noyes-v2.jpg" alt="Brian Noyes" /></div>
+<div class="author-name">Brian Noyes</div>
+</div>
+<div class="author-info-bio">
+Brian Noyes is CTO and Architect at Solliance (www.solliance.net), an expert technology solutions development company. Brian is a Microsoft MVP and specializes in client application architecture, full stack web development, cloud and microservice architecture. Brian has authored several books and dozens of technology publication articles, including Developer's Guide to Microsoft Prism 4, Data Binding with Windows Forms 2.0, and Smart Client Deployment with ClickOnce. Brian got started programmin<span>... <a href="#" onclick="javascript:jQuery(this).parent().hide().parent().find('.trimmed-text').fadeIn(250);return false;">more</a></span><span class="trimmed-text" style="display: none;">g as a hobby while flying F-14 Tomcats in the U.S. Navy, later turning his passion for software into his current career.</span>
+</div>
+</div>
+<div class="author-info">
+<div class="author-info-detail">
+<div class="author-pic"><img src="https://pluralsight.imgix.net/author/lg/0cddb5dc-69b6-4237-a925-a3834159df3e.jpg" alt="Duncan Hunter" /></div>
+<div class="author-name">Duncan Hunter</div>
+</div>
+<div class="author-info-bio">
+Duncan works as an Australian software consultant, founder of Foodzone, Pluralsight author who travels the world speaking at events and training technology professionals. Duncan is an Angular expert and divides his time with between training and upskilling teams to implement best practices with Angular, growing Foodzone and working for clients writing code.
+</div>
+</div>
+<div class="author-info">
+<div class="author-info-detail">
+<div class="author-pic"><img src="https://pluralsight.imgix.net/author/lg/b0d6c05d-0b22-489e-aa22-40e3f741f89c.jpg" alt="Brice Wilson" /></div>
+<div class="author-name">Brice Wilson</div>
+</div>
+<div class="author-info-bio">
+Brice Wilson has been a professional developer for over 30 years and has used many tools and programming languages during that time. He has worked as a developer and architect for a number of large companies and enjoys learning, experimenting with, and teaching new technologies. His current interests are centered on server and client-side web development.
+</div>
+</div>
+<div class="author-info">
+<div class="author-info-detail">
+<div class="author-pic"><img src="https://pluralsight.imgix.net/author/lg/dan-wahlin-v2.jpg" alt="Dan Wahlin" /></div>
+<div class="author-name">Dan Wahlin</div>
+</div>
+<div class="author-info-bio">
+Dan Wahlin founded Wahlin Consulting, which provides consulting and training services on JavaScript, Angular, Node.js, C#, ASP.NET MVC, Web API, Docker, and Kubernetes. He is a Google GDE (and former Microsoft MVP and Regional Director), Docker Captain, and speaks at conferences and user groups around the world.
+Dan is active on Twitter (@DanWahlin), blogs at https://blog.codewithdan.com, and adds a lot of code to his Github repos at https://github.com/danwahlin.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="paths-content-btm">
+<div class="row column-control--super-wide">
+<div class="large-12 columns">
+<div class="large-8 columns">
+<h3>Join our learners and upskill <br class="show-for-large-up" />in leading technologies</h3>
+</div>
+<div class="large-4 columns">
+<a href="/pricing/skills" class="button button--gradient button--small main-paths-signup">Get Started</a>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+
+<div id="ps_pro_qty_modal">
+<div class="column-control section">
+<div class="container column-control-container ">
+<div class="row column-control--wide">
+<div class="large-5 columns column_qty large-push-7">
+<h3>Ready to skill up<br />your entire team?</h3>
+<div class="qty-selector">
+<div class="qty-down"><i class="icons" icon="down-arrow"></i></div>
+<div class="qty-display">
+<div class="qty-display-number">10</div>
+<div class="qty-display-label">Subscriptions</div>
+</div>
+ <div class="qty-up"><i class="icons" icon="up-arrow"></i></div>
+</div>
+<div class="qty-sales-message hidden">Need more subscriptions? <a href="/product/contact-sales">Contact sales</a>.</div>
+<a class="button button--gradient button--small biz_qty_checkout pilot-hide" data-aa-title="pro-qty-modal-signup" href="https://www.pluralsight.com/buy?sku=PROFESSIONAL-SG&quantity=10">Continue to checkout</a>
+<a class="button button--gradient button--small biz_qty_checkout pilot-show" data-aa-title="pro-qty-modal-trial" href="https://www.pluralsight.com/buy?sku=PROFESSIONAL-SG-PILOT&quantity=10">Continue to checkout</a>
+<div class="ps_pro_qty_modal-cancel">Cancel</div>
+</div>
+<div class="large-7 columns column_feature large-pull-5">
+<h3 class="pilot-hide">With your Pluralsight plan, you can:</h3>
+<h3 class="pilot-show">With your 30-day pilot, you can:</h3>
+<ul>
+<li class="pilot-hide">Access thousands of videos to develop critical skills</li>
+<li class="pilot-show">Give up to 10 users access to thousands of video courses</li>
+<li>Practice and apply skills with interactive courses and projects</li>
+<li>See skills, usage, and trend data for your teams</li>
+<li>Prepare for certifications with industry-leading practice exams</li>
+<li>Measure proficiency across skills and roles</li>
+<li>Align learning to your goals with paths and channels</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="ps_starter_qty_modal">
+<div class="column-control section">
+<div class="container column-control-container ">
+<div class="row column-control--wide">
+<div class="large-5 columns column_qty large-push-7">
+<h3>Ready to skill up<br />your entire team?</h3>
+<div class="qty-selector">
+<div class="qty-down"><i class="icons" icon="down-arrow"></i></div>
+<div class="qty-display">
+<div class="qty-display-number">10</div>
+<div class="qty-display-label">Subscriptions</div>
+</div>
+<div class="qty-up"><i class="icons" icon="up-arrow"></i></div>
+</div>
+<div class="qty-sales-message hidden">Need more subscriptions? <a href="/product/contact-sales">Contact sales</a>.</div>
+<a class="button button--gradient button--small biz_qty_checkout pilot-hide" data-aa-title="starter-qty-modal-signup" href="https://www.pluralsight.com/buy?sku=STARTER-A&quantity=10">Continue to checkout</a>
+<div class="ps_starter_qty_modal-cancel">Cancel</div>
+</div>
+<div class="large-7 columns column_feature large-pull-5">
+<h3 class="pilot-hide">With your Pluralsight plan, you can:</h3>
+<h3 class="pilot-show">With your 30-day pilot, you can:</h3>
+<ul>
+<li class="pilot-hide">Access thousands of videos to develop critical skills</li>
+<li class="pilot-show">Give up to 10 users access to thousands of video courses</li>
+<li>Practice and apply skills with interactive courses and projects</li>
+<li>See skills, usage, and trend data for your teams</li>
+<li>Prepare for certifications with industry-leading practice exams</li>
+<li>Measure proficiency across skills and roles</li>
+<li>Align learning to your goals with paths and channels</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="xf-page xfpage page basicpage">
+<div class="xf-content-height">
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+<div class="footer-wrapper aem-GridColumn aem-GridColumn--default--12">
+<div class="footer-wrapper aem-component" id="unified-footer-id">
+<div class="footer-top-row">
+<ul class="footer-column-list">
+<li class="footer-column">
+<div class="footer-column aem-component">
+<h2 class="footer-column-header">Support</h2>
+<ul class="parsys footer-column-parsys"><li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="/contact" class="footer-column-list-item-link" data-aa-title="tracking-contact" target="_blank">Contact</a>
+</div>
+</li>
+<li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="https://help.pluralsight.com/help" class="footer-column-list-item-link" data-aa-title="tracking-help" target="_blank">Help Center</a>
+</div>
+</li>
+<li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="https://help.pluralsight.com/help/ip-allowlist" class="footer-column-list-item-link" data-aa-title="tracking-ip-allowlist" target="_blank">IP Allowlist</a>
+</div>
+</li>
+<li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="https://www.pluralsight.com/sitemap.xml" class="footer-column-list-item-link" data-aa-title="tracking-sitemap" target="_blank">Site Map</a>
+</div>
+</li>
+<li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="/product/downloads" class="footer-column-list-item-link" data-aa-title="tracking-downloads" target="_blank">Download Pluralsight</a>
+</div>
+</li>
+<li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="/pricing/skills" class="footer-column-list-item-link" data-aa-title="tracking-skills" target="_blank">Skills Plans</a>
+</div>
+</li>
+<li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="/pricing/flow" class="footer-column-list-item-link" data-aa-title="tracking-flow-plans" target="_blank">Flow Plans</a>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="footer-column">
+<div class="footer-column aem-component">
+<h2 class="footer-column-header">Community</h2>
+<ul class="parsys footer-column-parsys"><li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="https://www.pluralsight.com/guides" class="footer-column-list-item-link" data-aa-title="tracking-guides" target="_blank">Guides</a>
+</div>
+</li>
+<li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="/teach" class="footer-column-list-item-link" data-aa-title="tracking-teach" target="_blank">Teach</a>
+</div>
+</li>
+<li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="/partners" class="footer-column-list-item-link" data-aa-title="tracking-partner-with-pluralsight" target="_blank">Partner with Pluralsight</a>
+</div>
+</li>
+<li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="/affiliate" class="footer-column-list-item-link" data-aa-title="tracking-affiliate" target="_blank">Affiliate Partners</a>
+</div>
+</li>
+<li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="https://www.pluralsightone.org/" class="footer-column-list-item-link" data-aa-title="tracking-pluralsight-one" target="_blank">Pluralsight One</a>
+</div>
+</li>
+<li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="/authors" class="footer-column-list-item-link" data-aa-title="tracking-authors" target="_blank">Authors</a>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="footer-column">
+<div class="footer-column aem-component">
+<h2 class="footer-column-header">Company</h2>
+<ul class="parsys footer-column-parsys"><li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="/about" class="footer-column-list-item-link" data-aa-title="tracking-about" target="_blank">About Us</a>
+</div>
+</li>
+<li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="/careers" class="footer-column-list-item-link" data-aa-title="tracking-careers" target="_blank">Careers</a>
+</div>
+</li>
+<li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="/newsroom" class="footer-column-list-item-link" data-aa-title="tracking-newsroom" target="_blank">Newsroom</a>
+</div>
+</li>
+<li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="/resource-center" class="footer-column-list-item-link" data-aa-title="tracking-resources" target="_blank">Resources</a>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="footer-column">
+<div class="footer-column aem-component">
+<h2 class="footer-column-header">Industries</h2>
+<ul class="parsys footer-column-parsys"><li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="/industries/public-sector" class="footer-column-list-item-link" data-aa-title="tracking-public-sector" target="_blank">Public Sector</a>
+</div>
+</li>
+<li class="footer-column-list-item section">
+<div class="footer-column-list-item aem-component">
+<a href="https://www.pluralsightone.org/" class="footer-column-list-item-link" data-aa-title="tracking-non-profit" target="_blank">Non-Profit</a>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<div class="footer-form-section">
+<div class="footer-form">
+<h2 class="footer-form-header">
+Newsletter
+</h2>
+<div class="marketo-form-component marketo-form--stacked marketo-form--left   clearfix">
+<p class="marketo-form--headerMessage">Sign up with your email to join our mailing list.</p>
+<div class="marketo-form-data hidden">
+<span class="form-id">1041</span>
+<a class="redirect-path">Redirect Link</a>
+<span class="download-path"></span>
+<span class="success-message">Form Submitted Successfully!</span>
+<span class="marketo-wid"></span>
+<span class="marketo-biz-email"></span>
+</div>
+<form name="mkto_form" id="marketoForm_1041" class="marketo-target"><div class="loading-message"><p class="loading-message-top">Loading form...</p><p class="loading-message-bottom">If this message remains, it may be due to cookies being disabled or to an ad blocker.</p></div></form>
+<iframe id="marketo-file" style="display:none;"></iframe>
+</div>
+<script type="text/javascript" src="//cdn-0.d41.co/tags/ff-2.min.js" charset="utf-8"></script>
+</div>
+<ul class="footer-social-section">
+<li class="social-icon">
+<div class="social-icon aem-component">
+<a class="social-icon-link" href="https://www.facebook.com/pluralsight" data-aa-title="tracking-footer-social-facebook" target="_blank">
+<span class="social-icon-image-wrapper">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/social-icons/social-icon-fb-blue.webp" alt="Facebook Logo Icon" style="  " class=" " />
+</span>
+</a>
+</div>
+</li>
+<li class="social-icon">
+<div class="social-icon aem-component">
+<a class="social-icon-link" href="https://twitter.com/pluralsight" data-aa-title="tracking-footer-social-twitter" target="_blank">
+<span class="social-icon-image-wrapper">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/social-icons/social-icon-twitter-blue.webp" alt="Twitter Logo Icon" style="  " class=" " />
+</span>
+</a>
+</div>
+</li>
+<li class="social-icon">
+<div class="social-icon aem-component">
+<a class="social-icon-link" href="https://www.instagram.com/accounts/login/?next=/pluralsight/" data-aa-title="tracking-footer-social-instagram" target="_blank">
+<span class="social-icon-image-wrapper">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/social-icons/social-icon-instagram-blue.webp" alt="Instagram Logo Icon" style="  " class=" " />
+</span>
+</a>
+</div>
+</li>
+<li class="social-icon">
+<div class="social-icon aem-component">
+<a class="social-icon-link" href="https://www.linkedin.com/company/pluralsight/mycompany/verification/" data-aa-title="tracking-footer-social-linkedin" target="_blank">
+<span class="social-icon-image-wrapper">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/social-icons/social-icon-linkedin-blue.webp" alt="LinkedIn Logo Icon" style="  " class=" " />
+</span>
+</a>
+</div>
+</li>
+<li class="social-icon">
+<div class="social-icon aem-component">
+<a class="social-icon-link" href="https://www.youtube.com/pluralsight" data-aa-title="tracking-footer-social-youtube" target="_blank">
+<span class="social-icon-image-wrapper">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/social-icons/social-icon-yt-blue.webp" alt="Youtube Logo Icon" style="  " class=" " />
+</span>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom-row">
+<a href="/" class="footer-copyright-link" data-aa-title="tracking-footer-logo" target="_blank">
+<span class="footer-copyright-icon-wrapper">
+<img src="/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/px.png" data-lazysrc="/content/dam/pluralsight-creative-team/creative_portfolio/brand_strategic_refresh2022program/brand_strategic_refreshcreativeexploration2022project/final/pluralsight/mark/png/Pluralsight-Logo-Mark-Color-Fill.png" alt="Pluralsight Logo" style=" max-height: 50px; " class=" " />
+</span>
+<span class="footer-copyright-link-text">
+Copyright © 2004 - 2023 Pluralsight LLC. All rights reserved
+</span>
+</a>
+<div class="footer-language-selector">
+<span class="footer-language-icon-wrapper">
+</span>
+<ul class="footer-language-link-list">
+<li class="footer-column-list-item">
+<div class="footer-column-list-item aem-component">
+<a class="footer-column-list-item-link"></a>
+</div>
+</li>
+<li class="footer-column-list-item">
+<div class="footer-column-list-item aem-component">
+<a class="footer-column-list-item-link"></a>
+</div>
+</li>
+<li class="footer-column-list-item">
+<div class="footer-column-list-item aem-component">
+<a class="footer-column-list-item-link"></a>
+</div>
+</li>
+</ul>
+</div>
+<ul class="footer-policy-link-list">
+<li class="footer-column-list-item">
+<div class="footer-column-list-item aem-component">
+<a href="/terms" class="footer-column-list-item-link" data-aa-title="tracking-terms" target="_blank">Terms of Use</a>
+</div>
+</li>
+<li class="footer-column-list-item">
+<div class="footer-column-list-item aem-component">
+<a href="/privacy" class="footer-column-list-item-link" data-aa-title="tracking-privacy" target="_blank">Privacy Notice</a>
+</div>
+</li>
+<li class="footer-column-list-item">
+<div class="footer-column-list-item aem-component">
+<a href="/content/dam/pluralsight2/legal/2022-01-24-PS_Modern-Slavery-Act-Transparency-Statement-2022.pdf" class="footer-column-list-item-link" data-aa-title="tracking-code-of-conduct" target="_blank">Modern Slavery Statement</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<script>
+jQuery(".text.section, .text-2.section, .text-3.section, .text-4.section, .title.section, .title2.section").each(function(key,item) {
+    if (item.innerHTML.indexOf("\u2028") > -1){
+        item.innerHTML = item.innerHTML.replace(/\u2028/g, ' ');
+    }
+});
+</script>
+<script>
+function isElementInViewport (el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+  );
+}
+function loadLazysrc(item){
+  var $item = jQuery(item);
+  if ($item.hasClass("lazy-bg")){
+    $item.removeClass("lazy-bg");
+  } else {
+    var src = $item.attr('data-lazysrc');
+    $item.attr('src',src);
+    $item.removeAttr('data-lazysrc');
+  }
+}
+
+//lazy load images above the fold
+jQuery('img[data-lazysrc],.lazy-bg').each(function(index,item){
+  if ( jQuery(item).is(":visible") && isElementInViewport(item) ){
+    loadLazysrc(item);
+  } else if (document.URL.indexOf("lazyLoadOff=true") > -1){
+    loadLazysrc(item);
+  }
+});
+
+//lazy load images below the fold. Keep function available for promo service or others that may need it.
+window.addEventListener('load', function(){
+  jQuery('img[data-lazysrc],.lazy-bg').each(function(index,item){
+    loadLazysrc(item);
+  });
+});
+</script>
+<script type="text/javascript" src="/etc.clientlibs/pluralsight/clientlibs/clientlib-uber.lc-7159e7d8edc4bfd174d8aaf8fcd21270-lc.min.js" defer></script>
+<link rel="stylesheet" href="/content/dam/gtm/ps-tt-commons.css" type="text/css" />
+</div>
+</div>
+</body>
+</html>
